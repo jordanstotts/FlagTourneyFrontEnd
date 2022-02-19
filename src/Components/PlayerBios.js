@@ -12,6 +12,9 @@ import {
 let players = [
   {
     name: "Jordan Stotts",
+    social: [
+      {twitter: "https://twitter.com/JordanStotts15", ig: "https://www.instagram.com/jordanstotts15/", facebook: "https://www.facebook.com/jordan.stotts"}
+    ],
     age: 28,
     occupation: "Software Engineer",
     alma_mater: "University of Sioux Falls",
@@ -22,6 +25,7 @@ let players = [
   },
   {
     name: "Derrick Wiley",
+    social: [{twitter: "https://twitter.com/ddubthekid", ig: "https://www.instagram.com/derrickwiley_/", facebook: "https://www.facebook.com/derrick.wiley.104"}],
     age: 28,
     occupation: "Digital Designer at Techint Labs",
     alma_mater: "Iowa State University",
@@ -32,6 +36,7 @@ let players = [
   },
   {
     name: "Ryan Biegger",
+    social: [{twitter: "https://twitter.com/BieggerIsBetter", ig: "https://www.instagram.com/ryan_biegger/", facebook: "https://www.facebook.com/ryan.biegger"}],
     age: 27,
     occupation: "Accountant at E.Y.",
     alma_mater: "University of Northern Iowa",
@@ -43,6 +48,7 @@ let players = [
   },
   {
     name: "Connor Girkin",
+    social: [{twitter: "https://twitter.com/GirkinOffIsFun", ig: "https://www.instagram.com/cgirkin/", facebook: "https://www.facebook.com/connor.girkin"}],
     age: 28,
     occupation: "Digital Marketing Consultant for Sinclair",
     alma_mater: "University of Iowa",
@@ -53,6 +59,7 @@ let players = [
   },
   {
     name: "Grant Luther",
+    social: [{twitter: "https://twitter.com/GrantLuther12", ig: "https://www.instagram.com/grantluther12/", facebook: "https://www.facebook.com/grant.luther.92"}],
     age: 28,
     occupation: "Event Operations Coordinator at Iowa State Athletics",
     alma_mater: "Iowa State University",
@@ -63,6 +70,7 @@ let players = [
   },
   {
     name: "Austin Howe",
+    social: [{twitter: "https://twitter.com/AustinKnowsHowe", ig: "https://www.instagram.com/austinhowe2/", facebook: "https://www.facebook.com/profile.php?id=1816414823"}],
     age: 28,
     occupation: "Accounting and Paule Crewe",
     alma_mater: "University of Iowa",
@@ -72,7 +80,7 @@ let players = [
     picture: "https://live.staticflickr.com/65535/51890564842_bdff880d6c_m.jpg",
   },
 ];
-
+console.log(players)
 const PlayerBios = () => {
   return (
     <div>
@@ -82,7 +90,9 @@ const PlayerBios = () => {
           <Card>
             <CardBody>
               <CardTitle tag="h5">{players.name}</CardTitle>
-              <CardLink href="#">social media link</CardLink>
+              <CardLink href="#">{ players.social[0].twitter }</CardLink>
+              <CardLink href="#">{ players.social[0].ig }</CardLink>
+              <CardLink href="#">{ players.social[0].facebook }</CardLink>
             </CardBody>
             <img src={players.picture} alt="profile pic" />
             <CardBody>
