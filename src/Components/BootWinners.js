@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const BootWinners = () => {
-  return (
-    <div>BootWinners</div>
-  )
-}
+  return <div>BootWinners</div>;
+};
 
-export default BootWinners
+export default BootWinners;

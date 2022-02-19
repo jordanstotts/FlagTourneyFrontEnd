@@ -1,0 +1,56 @@
+[
+    {
+        "name": "Jordan Stotts",
+        "age": 28,
+        "occupation": "Software Engineer",
+        "alma_mater": "University of Sioux Falls",
+        "flag_years": 0,
+        "quote": "Pipe it up",
+        "boot_years": 0
+    },
+    {
+        "name": "Derrick Wiley",
+        "age": 28,
+        "occupation": "Digital Designer at Techint Labs",
+        "alma_mater": "Iowa State University",
+        "flag_years": [2014, 2016, 2020, 2021],
+        "quote": "BOOM HEADSHOT",
+        "boot_years": 0
+    },
+    {
+        "name": "Ryan Biegger",
+        "age": 27,
+        "occupation": "Accountant at E.Y.",
+        "alma_mater": "University of Northern Iowa",
+        "flag_years": [2018, 2019],
+        "quote": "If you tell a lie well enough you may even start to believe it yourself",
+        "boot_years": 0
+    },
+    {
+        "name": "Connor Girkin",
+        "age": 28,
+        "occupation": "Digital Marketing Consultant for Sinclair",
+        "alma_mater": "University of Iowa",
+        "flag_years": 2017,
+        "quote": "I'm a Des Moines 7, but a prison 10",
+        "boot_years": 0
+    },
+    {
+        "name": "Grant Luther",
+        "age": 28,
+        "occupation": "Event Operations Coordinator at Iowa State Athletics",
+        "alma_mater": "Iowa State University",
+        "flag_years": [2013, 2015],
+        "quote": "That's why they call me big daddy hacks",
+        "boot_years": [2018, 2019, 2020, 2021]
+    },
+    {
+        "name": "Austin Howe",
+        "age": 28,
+        "occupation": "Accounting and Paule Crewe",
+        "alma_mater": "University of Iowa",
+        "flag_years": 0,
+        "quote": "You guys are bums",
+        "boot_years": 0
+    }
+]
