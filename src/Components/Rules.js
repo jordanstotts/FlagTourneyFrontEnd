@@ -1,4 +1,7 @@
 import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Button, Collapse } from "bootstrap";
+import { Card, CardBody } from "reactstrap";
 
 const Rules = () => {
   return (

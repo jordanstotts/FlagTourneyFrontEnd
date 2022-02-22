@@ -17,6 +17,7 @@ const History = () => {
         It's not about winning the tournament, it's about making sure you don't
         lose
       </p>
+      <img src="https://live.staticflickr.com/65535/51892917062_2d52b126c5_m.jpg" alt="flag_logo"/>
     </div>
   );
 };
