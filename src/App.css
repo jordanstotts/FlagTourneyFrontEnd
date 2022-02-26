@@ -32,7 +32,6 @@
   width: 250px;
 }
 
-
 .bio-info {
   display: flex;
   flex-wrap: wrap;
@@ -54,7 +53,7 @@
 
 .flag-winner-pic {
   height: 300px;
-  width: 300px
+  width: 300px;
 }
 
 .scorecard-pic {
@@ -72,7 +71,7 @@
   grid-row-gap: 40px;
   width: 1500px;
   height: 200px;
-  margin: 75px auto 175px auto
+  margin: 75px auto 175px auto;
 }
 
 /* =============== History Component =============== */
@@ -91,7 +90,7 @@
   height: 200px;
   width: 800px;
   display: block;
-  margin: 75px auto auto auto ;
+  margin: 75px auto auto auto;
 }
 
 .flag-quote {
@@ -106,8 +105,35 @@
   height: 400px;
   width: 400px;
   display: block;
-margin: auto auto 100px auto;
+  margin: auto auto 100px auto;
 }
 
 /* =============== Rules Component =============== */
 
+.rules-layout {
+  margin: 75px auto 75px auto;
+  height: 135rem;
+  width: 75rem;
+}
+
+.rule-section {
+  margin: 15px 0 50px 0;
+}
+
+.rule-name {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 18rem;
+}
+
+.rules-list {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20rem;
+  width: 650px;
+}
+
+.rules-list li {
+margin: .5rem;
+}
