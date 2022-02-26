@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, CardBody, CardTitle, CardText, CardLink } from "reactstrap";
+import { Card, CardBody, CardTitle, CardText, CardLink,  } from "reactstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const players = [
@@ -110,7 +110,7 @@ const players = [
 console.log(players);
 const PlayerBios = () => {
   return (
-    <div>
+    <div className="player-bio-layout">
       <h1 className="player-bio-header">Player Bios</h1>
       <div className="bio">
         {players.map((players) => {
@@ -119,11 +119,9 @@ const PlayerBios = () => {
               <CardBody>
                 <CardTitle>{players.name}</CardTitle>
                 <div className="socials">
-                  <CardLink href={players.social[0].twitter}>Twitter</CardLink>
-                  <CardLink href={players.social[0].ig}>Instagram</CardLink>
-                  <CardLink href={players.social[0].facebook}>
-                    Facebook
-                  </CardLink>
+                  <CardLink href={players.social[0].twitter}><img src="https://cdn-icons-png.flaticon.com/512/124/124021.png" className="social-icon"/></CardLink>
+                  <CardLink href={players.social[0].ig}><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" className="social-icon"/></CardLink>
+                  <CardLink href={players.social[0].facebook}><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" className="social-icon"/></CardLink>
                 </div>
                 <img
                   className="bio-pic"
