@@ -7,7 +7,8 @@ const NextYearInsight = () => {
   return (
     <div>
       <h1>Insight To Next Year</h1>
-      <div>
+      <div className="predictions-layout">
+        <div>
         <p>
         Austin's predictions:
         </p>
@@ -18,6 +19,8 @@ const NextYearInsight = () => {
           <ListGroupItem>Derrick</ListGroupItem>
           <ListGroupItem>Connor(flag)</ListGroupItem>
         </ListGroup>
+        </div>
+        <div>
         <p>
         Grant's predictions:
         </p>
@@ -28,6 +31,8 @@ const NextYearInsight = () => {
           <ListGroupItem>Derrick</ListGroupItem>
           <ListGroupItem>Connor(flag)</ListGroupItem>
         </ListGroup>
+        </div>
+        <div>
         <p>
         Connor's predictions:
         </p>
@@ -38,6 +43,8 @@ const NextYearInsight = () => {
           <ListGroupItem>Derrick</ListGroupItem>
           <ListGroupItem>Connor(flag)</ListGroupItem>
         </ListGroup>
+        </div>
+        <div>
         <p>
         Derricks's predictions:
         </p>
@@ -48,6 +55,8 @@ const NextYearInsight = () => {
           <ListGroupItem>Derrick</ListGroupItem>
           <ListGroupItem>Connor(flag)</ListGroupItem>
         </ListGroup>
+        </div>
+        <div>
         <p>
         Jordan's predictions:
         </p>
@@ -58,6 +67,7 @@ const NextYearInsight = () => {
           <ListGroupItem>Derrick</ListGroupItem>
           <ListGroupItem>Connor(flag)</ListGroupItem>
         </ListGroup>
+        </div><div>
         <p>
         Ryan's predictions:
         </p>
@@ -68,6 +78,7 @@ const NextYearInsight = () => {
           <ListGroupItem>Derrick</ListGroupItem>
           <ListGroupItem>Connor(flag)</ListGroupItem>
         </ListGroup>
+        </div>
       </div>
     </div>
   );

@@ -61,3 +61,16 @@
   height: 300px;
   width: 300px;
 }
+
+/* =============== PastRecipients Component =============== */
+
+.predictions-layout {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 40px;
+  grid-row-gap: 40px;
+  width: 1500px;
+  height: 200px;
+  margin: 75px 0 550px 200px;
+}
