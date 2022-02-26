@@ -1,13 +1,6 @@
 import React from "react";
-import {
-  Card,
-  CardGroup,
-  CardImg,
-  CardBody,
-  CardTitle
-} from "reactstrap";
+import { Card, CardGroup, CardImg, CardBody, CardTitle, Row } from "reactstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-
 
 const bootwinners = [
   {
@@ -40,20 +33,23 @@ const BootWinners = () => {
   return (
     <div>
       <h1>Boot Winners</h1>
-      {bootwinners.map((bootwinners) => {
-        return (
-          <CardGroup>
-            <Card>
-              <CardBody>
-                <CardTitle tag="h5">
-                  {bootwinners.name} - {bootwinners.course} - {bootwinners.year}
-                </CardTitle>
-              </CardBody>
-              <CardImg alt="boot winner" src={bootwinners.bootpic} />
-            </Card>
-          </CardGroup>
-        );
-      })}
+      <div className="boot-winner-layout">
+        {bootwinners.map((bootwinners) => {
+          return (
+            <CardGroup width="250px">
+              <Card>
+                <CardBody>
+                  <CardTitle tag="h5">
+                    {bootwinners.name} - {bootwinners.course} -{" "}
+                    {bootwinners.year}
+                  </CardTitle>
+                </CardBody>
+                <CardImg alt="boot winner" src={bootwinners.bootpic} />
+              </Card>
+            </CardGroup>
+          );
+        })}
+      </div>
     </div>
   );
 };
