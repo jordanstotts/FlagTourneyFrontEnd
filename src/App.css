@@ -2,56 +2,6 @@
   text-align: center;
 }
 
-.bioParent {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 50px;
-  grid-row-gap: 50px;
-  margin: 0 50px 0 50px;
-}
-
-.jordanBio {
-  grid-area: 1 / 0 / 2 / 1;
-}
-.derrickBio {
-  grid-area: 1 / 1 / 2 / 2;
-}
-.ryanBio {
-  grid-area: 1 / 2 / 2 / 3;
-}
-.connorBio {
-  grid-area: 2 / 0 / 3 / 1;
-}
-.grantBio {
-  grid-area: 2 / 1 / 3 / 2;
-}
-.austinBio {
-  grid-area: 2 / 2 / 3 / 3;
-}
-
-.player-bio-header {
-  margin: 50px 0 75px 0;
-}
-
-.bio-card-info {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(6, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-}
-
-p {
-  justify-self: start;
-  align-items: center;
-}
-
-img {
-  height: 250px;
-  width: 250px;
-}
-
 /* =============== BootWinner Component =============== */
 
 .boot-winner-layout {
@@ -62,5 +12,52 @@ img {
   grid-row-gap: 25px;
   width: 1500px;
   height: 500px;
-  margin: 75PX 0 0 210PX;
+  margin: 75px 0 250px 210px;
+}
+
+/* =============== PlayerBios Component =============== */
+.bio {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 40px;
+  grid-row-gap: 40px;
+  width: 1500px;
+  height: 200px;
+  margin: 75px 0 550px 200px;
+}
+
+.bio-pic {
+  height: 250px;
+  width: 250px;
+}
+
+
+.bio-info {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+/* =============== PastRecipients Component =============== */
+
+.past-recipient-layout {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  grid-column-gap: 50px;
+  grid-row-gap: 25px;
+  width: 1500px;
+  height: 500px;
+  margin: 75px 0 250px 210px;
+}
+
+.flag-winner-pic {
+  height: 300px;
+  width: 300px
+}
+
+.scorecard-pic {
+  height: 300px;
+  width: 300px;
 }

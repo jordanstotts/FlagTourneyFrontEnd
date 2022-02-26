@@ -15,9 +15,9 @@ const players = [
     age: 28,
     occupation: "Software Engineer",
     alma_mater: "University of Sioux Falls",
-    flag_years: 0,
+    flag_years: "0",
     quote: "Pipe it up",
-    boot_years: 0,
+    boot_years: "0",
     picture: "https://live.staticflickr.com/65535/51891505751_69ce94cd32_m.jpg",
   },
   {
@@ -32,9 +32,9 @@ const players = [
     age: 28,
     occupation: "Digital Designer at Techint Labs",
     alma_mater: "Iowa State University",
-    flag_years: [2014, 2016, 2020, 2021],
+    flag_years: "2014 | 2016 | 2020 | 2021",
     quote: "BOOM HEADSHOT",
-    boot_years: 0,
+    boot_years: "0",
     picture: "https://live.staticflickr.com/65535/51891505766_ff56026d56_m.jpg",
   },
   {
@@ -49,10 +49,10 @@ const players = [
     age: 27,
     occupation: "Accountant at E.Y.",
     alma_mater: "University of Northern Iowa",
-    flag_years: [2018, 2019],
+    flag_years: "2018 | 2019",
     quote:
       "If you tell a lie well enough you may even start to believe it yourself",
-    boot_years: 0,
+    boot_years: "0",
     picture: "https://live.staticflickr.com/65535/51891505721_7c6324e813_m.jpg",
   },
   {
@@ -67,9 +67,9 @@ const players = [
     age: 28,
     occupation: "Digital Marketing Consultant for Sinclair",
     alma_mater: "University of Iowa",
-    flag_years: 2017,
+    flag_years: "2017",
     quote: "I'm a Des Moines 7, but a prison 10",
-    boot_years: 0,
+    boot_years: "0",
     picture: "https://live.staticflickr.com/65535/51892161415_29d73c8daf_m.jpg",
   },
   {
@@ -84,9 +84,9 @@ const players = [
     age: 28,
     occupation: "Event Operations Coordinator at Iowa State Athletics",
     alma_mater: "Iowa State University",
-    flag_years: [2013, 2015],
+    flag_years: "2013 | 2015",
     quote: "That's why they call me big daddy hacks",
-    boot_years: [2018, 2019, 2020, 2021],
+    boot_years: "2018 | 2019 | 2020 | 2021",
     picture: "https://live.staticflickr.com/65535/51891506456_408aee8632_m.jpg",
   },
   {
@@ -101,9 +101,9 @@ const players = [
     age: 28,
     occupation: "Accounting and Paule Crewe",
     alma_mater: "University of Iowa",
-    flag_years: 0,
+    flag_years: "0",
     quote: "You guys are bums",
-    boot_years: 0,
+    boot_years: "0",
     picture: "https://live.staticflickr.com/65535/51890564842_bdff880d6c_m.jpg",
   },
 ];
@@ -112,268 +112,52 @@ const PlayerBios = () => {
   return (
     <div>
       <h1 className="player-bio-header">Player Bios</h1>
-      {/* {players.map((players) => {
-        return (
-          <div id="bio">
-            <Card id="bioContent" className="bios">
+      <div className="bio">
+        {players.map((players) => {
+          return (
+            <Card>
               <CardBody>
-                <CardTitle tag="h5">{players.name}</CardTitle>
+                <CardTitle>{players.name}</CardTitle>
                 <div className="socials">
-                  <CardLink href="#">{players.social[0].twitter}</CardLink>
-                  <CardLink href="#">{players.social[0].ig}</CardLink>
-                  <CardLink href="#">{players.social[0].facebook}</CardLink>
+                  <CardLink href={players.social[0].twitter}>Twitter</CardLink>
+                  <CardLink href={players.social[0].ig}>Instagram</CardLink>
+                  <CardLink href={players.social[0].facebook}>
+                    Facebook
+                  </CardLink>
                 </div>
                 <img
-                  className="bioPic"
+                  className="bio-pic"
                   src={players.picture}
                   alt="profile pic"
                 />
               </CardBody>
               <CardBody>
-                <CardText>
-                  <li>age: {players.age} </li>
-                  <li>occupation: {players.occupation} </li>
-                  <li>alma mater: {players.alma_mater} </li>
-                  <li>flag years: {players.flag_years} </li>
-                  <li>boot years: {players.boot_years} </li>
-                  <li>quote: {players.quote} </li>
+                <CardText className="bio-info">
+                  <ul className="bio-info-list">
+                    <p>
+                      <strong>Age:</strong> {players.age}{" "}
+                    </p>
+                    <p>
+                      <strong>Occupation:</strong> {players.occupation}{" "}
+                    </p>
+                    <p>
+                      <strong>Alma Mater:</strong> {players.alma_mater}{" "}
+                    </p>
+                    <p>
+                      <strong>Flag Years:</strong> {players.flag_years}{" "}
+                    </p>
+                    <p>
+                      <strong>Boot Years:</strong> {players.boot_years}{" "}
+                    </p>
+                    <p>
+                      <strong>Famous Quote:</strong> {players.quote}{" "}
+                    </p>
+                  </ul>
                 </CardText>
               </CardBody>
             </Card>
-          </div>
-        );
-      })} */}
-
-      <div className="bioParent">
-        <Card className="jordanBio">
-          <CardBody>
-            <CardTitle tag="h5">Jordan Stotts</CardTitle>
-            <div className="socials">
-              <CardLink href="#">Twitter</CardLink>
-              <CardLink href="#">IG</CardLink>
-              <CardLink href="#">Facebook</CardLink>
-            </div>
-            <img
-              className="bioPic"
-              src="https://live.staticflickr.com/65535/51891505751_69ce94cd32_m.jpg"
-              alt="profile pic"
-            />
-          </CardBody>
-          <CardBody>
-            <CardText className="bio-card-info">
-              <p>
-                <strong>Age:</strong> 28
-              </p>
-              <p>
-                <strong>Occupation:</strong> Software Engineer
-              </p>
-              <p>
-                <strong>Alma Mater:</strong> University of Sioux Falls{" "}
-              </p>
-              <p>
-                <strong>Years of Winning the Flag:</strong> 0{" "}
-              </p>
-              <p>
-                <strong>Years of Winning the Boot:</strong> 0{" "}
-              </p>
-              <p>
-                <strong>Famous Quote:</strong> "Pipe it up"{" "}
-              </p>
-            </CardText>
-          </CardBody>
-        </Card>
-        <Card className="derrickBio">
-          <CardBody>
-            <CardTitle tag="h5">Derrick Wiley</CardTitle>
-            <div className="socials">
-              <CardLink href="#">Twitter</CardLink>
-              <CardLink href="#">IG</CardLink>
-              <CardLink href="#">Facebook</CardLink>
-            </div>
-            <img
-              className="bioPic"
-              src="https://live.staticflickr.com/65535/51891505766_ff56026d56_m.jpg"
-              alt="profile pic"
-            />
-          </CardBody>
-          <CardBody>
-            <CardText className="bio-card-info">
-              <p>
-                <strong>Age:</strong> 27{" "}
-              </p>
-              <p>
-                <strong>Occupation:</strong> Digital Designer at Techint Labs
-              </p>
-              <p>
-                <strong>Alma Mater:</strong> Iowa State University{" "}
-              </p>
-              <p>
-                <strong>Years of Winning the Flag:</strong> 2014 - 2016 - 2020 -
-                2021{" "}
-              </p>
-              <p>
-                <strong>Years of Winning the Boot:</strong> 0{" "}
-              </p>
-              <p>
-                <strong>Famous Quote:</strong> "BOOM HEADSHOT"{" "}
-              </p>
-            </CardText>
-          </CardBody>
-        </Card>
-        <Card className="ryanBio">
-          <CardBody>
-            <CardTitle tag="h5">Ryan Biegger</CardTitle>
-            <div className="socials">
-              <CardLink href="#">Twitter</CardLink>
-              <CardLink href="#">IG</CardLink>
-              <CardLink href="#">Facebook</CardLink>
-            </div>
-            <img
-              className="bioPic"
-              src="https://live.staticflickr.com/65535/51891505721_7c6324e813_m.jpg"
-              alt="profile pic"
-            />
-          </CardBody>
-          <CardBody>
-            <CardText className="bio-card-info">
-              <p>
-                <strong>Age:</strong> 27{" "}
-              </p>
-              <p>
-                <strong>Occupation:</strong> Accountant at EY{" "}
-              </p>
-              <p>
-                <strong>Alma Mater:</strong> University of Northern Iowa{" "}
-              </p>
-              <p>
-                <strong>Years of Winning the Flag:</strong> 2018 - 2019{" "}
-              </p>
-              <p>
-                <strong>Years of Winning the Boot:</strong> 0{" "}
-              </p>
-              <p>
-                <strong>Famous Quote:</strong> "If you tell a lie well enough
-                you may even start to believe it yourself"
-              </p>
-            </CardText>
-          </CardBody>
-        </Card>
-        <Card className="connorBio">
-          <CardBody>
-            <CardTitle tag="h5">Connor Girkin</CardTitle>
-            <div className="socials">
-              <CardLink href="#">Twitter</CardLink>
-              <CardLink href="#">IG</CardLink>
-              <CardLink href="#">Facebook</CardLink>
-            </div>
-            <img
-              className="bioPic"
-              src="https://live.staticflickr.com/65535/51892161415_29d73c8daf_m.jpg"
-              alt="profile pic"
-            />
-          </CardBody>
-          <CardBody>
-            <CardText className="bio-card-info">
-              <p>
-                <strong>Age:</strong> 27{" "}
-              </p>
-              <p>
-                <strong>Occupation:</strong> Digital Marketing Consultant for
-                Sinclair{" "}
-              </p>
-              <p>
-                <strong>Alma Mater:</strong> Univerity of Iowa
-              </p>
-              <p>
-                <strong>Years of Winning the Flag:</strong> 2017{" "}
-              </p>
-              <p>
-                <strong>Years of Winning the Boot:</strong> 0{" "}
-              </p>
-              <p>
-                <strong>Famous Quote:</strong> "I'm a Des Moines 7, but a prison
-                10"{" "}
-              </p>
-            </CardText>
-          </CardBody>
-        </Card>
-        <Card className="grantBio">
-          <CardBody>
-            <CardTitle tag="h5">Grant Luther</CardTitle>
-            <div className="socials">
-              <CardLink href="#">Twitter</CardLink>
-              <CardLink href="#">IG</CardLink>
-              <CardLink href="#">Facebook</CardLink>
-            </div>
-            <img
-              className="bioPic"
-              src="https://live.staticflickr.com/65535/51891506456_408aee8632_m.jpg"
-              alt="profile pic"
-            />
-          </CardBody>
-          <CardBody>
-            <CardText className="bio-card-info">
-              <p>
-                <strong>Age:</strong> 28{" "}
-              </p>
-              <p>
-                <strong>Occupation:</strong> Event Operations Coordinator at
-                Iowa State Athletics{" "}
-              </p>
-              <p>
-                <strong>Alma Mater:</strong> Iowa State Univerity{" "}
-              </p>
-              <p>
-                <strong>Years of Winning the Flag:</strong> 2013 - 2015{" "}
-              </p>
-              <p>
-                <strong>Years of Winning the Boot:</strong> 2018 - 2019 - 2020 -
-                2021{" "}
-              </p>
-              <p>
-                <strong>Famous Quote:</strong> "That's why they call me Big
-                Daddy Hacks"{" "}
-              </p>
-            </CardText>
-          </CardBody>
-        </Card>
-        <Card className="austinBio">
-          <CardBody>
-            <CardTitle tag="h5">Austin Howe</CardTitle>
-            <div className="socials">
-              <CardLink href="#">Twitter</CardLink>
-              <CardLink href="#">IG</CardLink>
-              <CardLink href="#">Facebook</CardLink>
-            </div>
-            <img
-              className="bioPic"
-              src="https://live.staticflickr.com/65535/51890564842_bdff880d6c_m.jpg"
-              alt="profile pic"
-            />
-          </CardBody>
-          <CardBody>
-            <CardText className="bio-card-info">
-              <p>
-                <strong>Age:</strong> 28{" "}
-              </p>
-              <p>
-                <strong>Occupation:</strong> Accounting and Paule Crewe{" "}
-              </p>
-              <p>
-                <strong>Alma Mater:</strong> Univerity of Iowa{" "}
-              </p>
-              <p>
-                <strong>Years of Winning the Flag:</strong> 0{" "}
-              </p>
-              <p>
-                <strong>Years of Winning the Boot:</strong> 0{" "}
-              </p>
-              <p>
-                <strong>Famous Quote:</strong> "You guys are bums"{" "}
-              </p>
-            </CardText>
-          </CardBody>
-        </Card>
+          );
+        })}
       </div>
     </div>
   );

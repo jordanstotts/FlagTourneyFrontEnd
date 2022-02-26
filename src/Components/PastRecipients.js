@@ -1,13 +1,6 @@
 import React from "react";
-import {
-  Card,
-  CardGroup,
-  CardImg,
-  CardBody,
-  CardTitle
-} from "reactstrap";
+import { Card, CardGroup, CardImg, CardBody, CardTitle } from "reactstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-
 
 const flagwinners = [
   {
@@ -88,21 +81,24 @@ const PastRecipients = () => {
   return (
     <div>
       <h1>Flag Recipients</h1>
+      <div className="past-recipient-layout">
       {flagwinners.map((flagwinners) => {
         return (
           <CardGroup>
             <Card>
               <CardBody>
-                <CardTitle tag="h5">
+                <CardTitle>
                   {flagwinners.name} - {flagwinners.course} - {flagwinners.year}
                 </CardTitle>
               </CardBody>
-              <CardImg alt="flag winner" src={flagwinners.flagpic} />
-              <CardImg alt="scorecard" src={flagwinners.scorecard} />
+              <CardImg className="flag-winner-pic" alt="flag winner" src={flagwinners.flagpic} />
+              <br/>
+              <CardImg className="scorecard-pic" alt="scorecard" src={flagwinners.scorecard} />
             </Card>
           </CardGroup>
         );
       })}
+      </div>
     </div>
   );
 };
