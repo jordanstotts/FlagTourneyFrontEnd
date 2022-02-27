@@ -9,7 +9,7 @@ const SiteNavBar = () => {
         <div>
           <NavLink active href={"/"}>
             <img
-              src="https://live.staticflickr.com/65535/51892917062_2d52b126c5_m.jpg"
+              src="https://live.staticflickr.com/65535/51906509736_1f30d6643b_m.jpg"
               className="flag-icon"
             />
           </NavLink>

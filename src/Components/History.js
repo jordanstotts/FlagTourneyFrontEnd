@@ -34,7 +34,7 @@ const History = () => {
         </div>
         <img
           className="history-flag-logo"
-          src="https://live.staticflickr.com/65535/51892917062_2d52b126c5_m.jpg"
+          src="https://live.staticflickr.com/65535/51906509736_1f30d6643b_m.jpg"
           alt="flag_logo"
         />
       </div>
