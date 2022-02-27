@@ -1,5 +1,10 @@
 .App {
   text-align: center;
+  background-color: #efb1f2;
+}
+
+html {
+  background-color: #4cdbf6;
 }
 
 /* =============== HomeNavigation Component =============== */
@@ -13,7 +18,7 @@
 }
 
 .home-layout {
-margin: 25px auto auto auto;
+  margin: 25px auto auto auto;
 }
 
 .home-flag-logo {
@@ -32,23 +37,15 @@ margin: 25px auto auto auto;
 
 /* =============== SiteNavBar Component =============== */
 
-.site-nave-layout{
+.site-nave-layout {
   display: flex;
   justify-content: center;
   margin: 20px auto 50px auto;
 }
 
-/* =============== BootWinner Component =============== */
-
-.boot-winner-layout {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(10, 1fr);
-  grid-column-gap: 25px;
-  grid-row-gap: 25px;
-  width: 1500px;
-  height: 500px;
-  margin: 75px auto 100px auto;
+.flag-icon {
+  height: 30px;
+  width: 30px;
 }
 
 /* =============== PlayerBios Component =============== */
@@ -68,7 +65,7 @@ margin: 25px auto auto auto;
 }
 
 .socials {
-  margin: 0 0 15px 0 ;
+  margin: 0 0 15px 0;
 }
 
 .social-icon {
@@ -87,7 +84,7 @@ margin: 25px auto auto auto;
   flex-direction: column;
 }
 
-.bio-info p{
+.bio-info p {
   display: flex;
   justify-content: flex-start;
 }
@@ -122,6 +119,35 @@ margin: 25px auto auto auto;
 .scorecard-pic {
   height: 300px;
   width: 300px;
+}
+
+/* =============== BootWinner Component =============== */
+
+.boot-winner-layout {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  grid-column-gap: 25px;
+  grid-row-gap: 25px;
+  width: 1500px;
+  height: 500px;
+  margin: 75px auto 50px auto;
+}
+
+.pre-boot {
+  margin-top: 2.5rem;
+}
+
+.boot-winner-title {
+  font-weight: bold;
+}
+
+.boot-winner-pic {
+  height: 22rem;
+}
+
+.boot-winners {
+  margin-bottom: 100px;
 }
 
 /* =============== NextYearInsight Component =============== */
@@ -198,5 +224,5 @@ margin: 25px auto auto auto;
 }
 
 .rules-list li {
-margin: .5rem;
+  margin: 0.5rem;
 }

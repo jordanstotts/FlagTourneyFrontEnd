@@ -81,25 +81,34 @@ const flagwinners = [
 const PastRecipients = () => {
   return (
     <div>
-    <SiteNavBar />
+      <SiteNavBar />
       <h1>Flag Recipients</h1>
       <div className="past-recipient-layout">
-      {flagwinners.map((flagwinners) => {
-        return (
-          <CardGroup>
-            <Card>
-              <CardBody>
-                <CardTitle>
-                  {flagwinners.name} - {flagwinners.course} - {flagwinners.year}
-                </CardTitle>
-              </CardBody>
-              <CardImg className="flag-winner-pic" alt="flag winner" src={flagwinners.flagpic} />
-              <br/>
-              <CardImg className="scorecard-pic" alt="scorecard" src={flagwinners.scorecard} />
-            </Card>
-          </CardGroup>
-        );
-      })}
+        {flagwinners.map((flagwinners) => {
+          return (
+            <CardGroup>
+              <Card>
+                <CardBody>
+                  <CardTitle>
+                    {flagwinners.name} - {flagwinners.course} -{" "}
+                    {flagwinners.year}
+                  </CardTitle>
+                </CardBody>
+                <CardImg
+                  className="flag-winner-pic"
+                  alt="flag winner"
+                  src={flagwinners.flagpic}
+                />
+                <br />
+                <CardImg
+                  className="scorecard-pic"
+                  alt="scorecard"
+                  src={flagwinners.scorecard}
+                />
+              </Card>
+            </CardGroup>
+          );
+        })}
       </div>
     </div>
   );

@@ -32,26 +32,41 @@ const bootwinners = [
 
 const BootWinners = () => {
   return (
-    <div>
+    <div className="boot-winners">
       <SiteNavBar />
       <h1>Boot Winners</h1>
+      <p className="pre-boot">
+        *pre boot trophy winners: 2013 - Ryan Biegger | 2014 - Jordan Stotts |
+        2015 - Jordan Stotts | 2016 - Ryan Biegger | 2017 - Ryan Biegger
+      </p>
       <div className="boot-winner-layout">
         {bootwinners.map((bootwinners) => {
           return (
             <CardGroup width="250px">
               <Card>
                 <CardBody>
-                  <CardTitle tag="h5">
-                    {bootwinners.name} - {bootwinners.course} -{" "}
+                  <CardTitle className="boot-winner-title">
+                    {bootwinners.name} <br /> {bootwinners.course} <br />
                     {bootwinners.year}
                   </CardTitle>
                 </CardBody>
-                <CardImg alt="boot winner" src={bootwinners.bootpic} />
+                <CardImg
+                  className="boot-winner-pic"
+                  alt="boot winner"
+                  src={bootwinners.bootpic}
+                />
               </Card>
             </CardGroup>
           );
         })}
       </div>
+      {/* <p>*pre boot trophy winners:</p>
+      <br />
+      <p>2013 - Ryan Biegger</p>
+      <p>2014 - Jordan Stotts</p>
+      <p>2015 - Jordan Stotts</p>
+      <p>2016 - Ryan Biegger</p>
+      <p>2017 - Ryan Biegger</p> */}
     </div>
   );
 };
