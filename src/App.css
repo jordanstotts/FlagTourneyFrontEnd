@@ -2,6 +2,42 @@
   text-align: center;
 }
 
+/* =============== HomeNavigation Component =============== */
+
+.me-auto {
+  margin: auto;
+}
+
+.home-header {
+  font-size: 40pt;
+}
+
+.home-layout {
+margin: 25px auto auto auto;
+}
+
+.home-flag-logo {
+  height: 400px;
+  width: 300px;
+  margin-top: 45px;
+}
+
+.home-flag-quote {
+  text-align: center;
+  display: block;
+  margin: 25px auto 125px 0;
+  font-style: italic;
+  font-size: 16pt;
+}
+
+/* =============== SiteNavBar Component =============== */
+
+.site-nave-layout{
+  display: flex;
+  justify-content: center;
+  margin: 20px auto 50px auto;
+}
+
 /* =============== BootWinner Component =============== */
 
 .boot-winner-layout {
@@ -19,13 +55,20 @@
 .bio {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 40px;
   grid-row-gap: 40px;
   width: 1500px;
   height: auto;
-  /* height: 200px; */
   margin: 75px auto 100px auto;
+}
+
+.bio-player-name {
+  font-size: 30pt;
+}
+
+.socials {
+  margin: 0 0 15px 0 ;
 }
 
 .social-icon {
@@ -42,6 +85,20 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+}
+
+.bio-info p{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.bio-info-list {
+  font-size: 10pt;
+  margin-left: 60px;
+}
+
+.bio-list-detail {
+  margin-left: 5px;
 }
 
 /* =============== PastRecipients Component =============== */

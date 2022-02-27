@@ -1,6 +1,7 @@
 import React from "react";
 import { Card, CardGroup, CardImg, CardBody, CardTitle, Row } from "reactstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
+import SiteNavBar from "./SiteNavBar";
 
 const bootwinners = [
   {
@@ -32,6 +33,7 @@ const bootwinners = [
 const BootWinners = () => {
   return (
     <div>
+      <SiteNavBar />
       <h1>Boot Winners</h1>
       <div className="boot-winner-layout">
         {bootwinners.map((bootwinners) => {

@@ -1,6 +1,7 @@
 import React from "react";
 import { Card, CardGroup, CardImg, CardBody, CardTitle } from "reactstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
+import SiteNavBar from "./SiteNavBar";
 
 const flagwinners = [
   {
@@ -80,6 +81,7 @@ const flagwinners = [
 const PastRecipients = () => {
   return (
     <div>
+    <SiteNavBar />
       <h1>Flag Recipients</h1>
       <div className="past-recipient-layout">
       {flagwinners.map((flagwinners) => {

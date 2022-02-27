@@ -1,6 +1,7 @@
 import React from "react";
-import { Card, CardBody, CardTitle, CardText, CardLink,  } from "reactstrap";
+import { Card, CardBody, CardTitle, CardText, CardLink } from "reactstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
+import SiteNavBar from "./SiteNavBar";
 
 const players = [
   {
@@ -110,6 +111,8 @@ const players = [
 console.log(players);
 const PlayerBios = () => {
   return (
+    <div>
+    <SiteNavBar />
     <div className="player-bio-layout">
       <h1 className="player-bio-header">Player Bios</h1>
       <div className="bio">
@@ -117,11 +120,26 @@ const PlayerBios = () => {
           return (
             <Card>
               <CardBody>
-                <CardTitle>{players.name}</CardTitle>
+                <CardTitle className="bio-player-name">{players.name}</CardTitle>
                 <div className="socials">
-                  <CardLink href={players.social[0].twitter}><img src="https://cdn-icons-png.flaticon.com/512/124/124021.png" className="social-icon"/></CardLink>
-                  <CardLink href={players.social[0].ig}><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" className="social-icon"/></CardLink>
-                  <CardLink href={players.social[0].facebook}><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" className="social-icon"/></CardLink>
+                  <CardLink href={players.social[0].twitter}>
+                    <img
+                      src="https://cdn-icons-png.flaticon.com/512/124/124021.png"
+                      className="social-icon"
+                    />
+                  </CardLink>
+                  <CardLink href={players.social[0].ig}>
+                    <img
+                      src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"
+                      className="social-icon"
+                    />
+                  </CardLink>
+                  <CardLink href={players.social[0].facebook}>
+                    <img
+                      src="https://cdn-icons-png.flaticon.com/512/733/733547.png"
+                      className="social-icon"
+                    />
+                  </CardLink>
                 </div>
                 <img
                   className="bio-pic"
@@ -133,22 +151,37 @@ const PlayerBios = () => {
                 <CardText className="bio-info">
                   <ul className="bio-info-list">
                     <p>
-                      <strong>Age:</strong> {players.age}{" "}
+                      <strong>Age: </strong>{" "}
+                      <div className="bio-list-detail">{players.age}</div>{" "}
                     </p>
                     <p>
-                      <strong>Occupation:</strong> {players.occupation}{" "}
+                      <strong>Occupation: </strong>{" "}
+                      <div className="bio-list-detail">
+                        {players.occupation}
+                      </div>{" "}
                     </p>
                     <p>
-                      <strong>Alma Mater:</strong> {players.alma_mater}{" "}
+                      <strong>Alma Mater: </strong>
+                      <div className="bio-list-detail">
+                        {" "}
+                        {players.alma_mater}
+                      </div>{" "}
                     </p>
                     <p>
-                      <strong>Flag Years:</strong> {players.flag_years}{" "}
+                      <strong>Flag Years: </strong>{" "}
+                      <div className="bio-list-detail">
+                        {players.flag_years}
+                      </div>{" "}
                     </p>
                     <p>
-                      <strong>Boot Years:</strong> {players.boot_years}{" "}
+                      <strong>Boot Years: </strong>{" "}
+                      <div className="bio-list-detail">
+                        {players.boot_years}
+                      </div>{" "}
                     </p>
                     <p>
-                      <strong>Famous Quote:</strong> {players.quote}{" "}
+                      <strong>Famous Quote: </strong>{" "}
+                      <div className="bio-list-detail">{players.quote} </div>{" "}
                     </p>
                   </ul>
                 </CardText>
@@ -157,6 +190,7 @@ const PlayerBios = () => {
           );
         })}
       </div>
+    </div>
     </div>
   );
 };

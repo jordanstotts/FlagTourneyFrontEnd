@@ -1,11 +1,13 @@
 import React from "react";
 import { ListGroup, ListGroupItem } from "reactstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
+import SiteNavBar from "./SiteNavBar";
 
 
 const NextYearInsight = () => {
   return (
     <div>
+      <SiteNavBar />
       <h1>Insight To Next Year</h1>
       <div className="predictions-layout">
         <div>

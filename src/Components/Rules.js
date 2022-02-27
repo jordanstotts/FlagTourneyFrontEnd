@@ -1,10 +1,12 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { List } from "reactstrap";
+import SiteNavBar from "./SiteNavBar";
 
 const Rules = () => {
   return (
     <div>
+      <SiteNavBar />
       <h1>Rules</h1>
       <div className="rules-layout">
         <div className="rule-section">

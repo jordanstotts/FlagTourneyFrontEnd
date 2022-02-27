@@ -8,13 +8,14 @@ import PastRecipients from './Components/PastRecipients';
 import PlayerBios from './Components/PlayerBios';
 import History from './Components/History';
 import Rules from './Components/Rules';
-import Home from './Components/Home';
+import SiteNavBar from './Components/SiteNavBar';
+import HomeNavigation from './Components/HomeNavigation';
 
 function App() {
   return (
     <div className="App">
-      <Home />
       <Routes>
+        <Route path='/' element={ <HomeNavigation /> } />
         <Route path='/PlayerBios' element={ <PlayerBios /> } />
         <Route path='/FlagRecipients' element={ <PastRecipients /> } />
         <Route path='/BootRecipients' element={ <BootWinners /> }/>
