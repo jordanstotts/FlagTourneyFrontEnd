@@ -99,12 +99,12 @@ const PastRecipients = () => {
                   alt="flag winner"
                   src={flagwinners.flagpic}
                 />
-                <br />
+                {/* <br />
                 <CardImg
                   className="scorecard-pic"
                   alt="scorecard"
                   src={flagwinners.scorecard}
-                />
+                /> */}
               </Card>
             </CardGroup>
           );
