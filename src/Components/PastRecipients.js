@@ -1,7 +1,21 @@
-import React from "react";
-import { Card, CardGroup, CardImg, CardBody, CardTitle } from "reactstrap";
+import React, { useState } from "react";
+import {
+  Card,
+  CardGroup,
+  CardImg,
+  CardBody,
+  CardTitle,
+  Button,
+  Modal,
+  ModalBody,
+  ModalHeader,
+  ModalFooter,
+} from "reactstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
+// import {Navbar, Nav, Button} from 'react-bootstrap';
 import SiteNavBar from "./SiteNavBar";
+import Comments from "../Commenting/Comments";
+import Scorecards from "./modals/Scorecards";
 
 const flagwinners = [
   {
@@ -79,10 +93,13 @@ const flagwinners = [
 ];
 
 const PastRecipients = () => {
+  const [openModal, setOpenModal] = useState(false);
+
   return (
     <div>
       <SiteNavBar />
       <h1>Flag Recipients</h1>
+
       <div className="past-recipient-layout">
         {flagwinners.map((flagwinners) => {
           return (
@@ -99,6 +116,46 @@ const PastRecipients = () => {
                   alt="flag winner"
                   src={flagwinners.flagpic}
                 />
+                <button
+                  className="openModalBtn"
+                  onClick={() => 
+                    setOpenModal(true)
+                  }
+                >
+                  Open
+                </button>
+                {openModal && <Scorecards closeModal={setOpenModal}/>}
+
+                {/* <div>
+                  <Button color="danger" onClick={() => setIsOpen(!isOpen)}>
+                    Click Me
+                  </Button>
+                  <Modal toggle={() => setIsOpen(!isOpen)}>
+                    <ModalHeader toggle={() => setIsOpen(!isOpen)}>
+                      Modal title
+                    </ModalHeader>
+                    <ModalBody>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                      sint occaecat cupidatat non proident, sunt in culpa qui
+                      officia deserunt mollit anim id est laborum.
+                    </ModalBody>
+                    <ModalFooter>
+                      <Button
+                        color="primary"
+                        onClick={() => setIsOpen(!isOpen)}
+                      >
+                        Do Something
+                      </Button>{" "}
+                      <Button onClick={() => setIsOpen(!isOpen)}>Cancel</Button>
+                    </ModalFooter>
+                  </Modal>
+                </div> */}
+
                 {/* <br />
                 <CardImg
                   className="scorecard-pic"
@@ -110,6 +167,7 @@ const PastRecipients = () => {
           );
         })}
       </div>
+      <div></div>
     </div>
   );
 };

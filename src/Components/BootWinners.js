@@ -2,6 +2,7 @@ import React from "react";
 import { Card, CardGroup, CardImg, CardBody, CardTitle, Row } from "reactstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import SiteNavBar from "./SiteNavBar";
+import Comments from "../Commenting/Comments";
 
 const bootwinners = [
   {
@@ -56,6 +57,7 @@ const BootWinners = () => {
                   src={bootwinners.bootpic}
                 />
               </Card>
+              <Comments currentUserId="1" />
             </CardGroup>
           );
         })}
