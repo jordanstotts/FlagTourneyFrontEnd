@@ -17,7 +17,7 @@ const players = [
     occupation: "Software Engineer",
     alma_mater: "University of Sioux Falls",
     flag_years: "0",
-    quote: "Pipe it up",
+    handicap: 12.2,
     boot_years: "0",
     picture: "https://live.staticflickr.com/65535/51891505751_69ce94cd32_m.jpg",
   },
@@ -34,7 +34,7 @@ const players = [
     occupation: "Digital Designer at Techint Labs",
     alma_mater: "Iowa State University",
     flag_years: "2014 | 2016 | 2020 | 2021",
-    quote: "BOOM HEADSHOT",
+    handicap: 19.5,
     boot_years: "0",
     picture: "https://live.staticflickr.com/65535/51891505766_ff56026d56_m.jpg",
   },
@@ -51,8 +51,7 @@ const players = [
     occupation: "Accountant at E.Y.",
     alma_mater: "University of Northern Iowa",
     flag_years: "2018 | 2019",
-    quote:
-      "If you tell a lie well enough you may even start to believe it yourself",
+    handicap: 13.1,
     boot_years: "0",
     picture: "https://live.staticflickr.com/65535/51891505721_7c6324e813_m.jpg",
   },
@@ -69,7 +68,7 @@ const players = [
     occupation: "Digital Marketing Consultant for Sinclair",
     alma_mater: "University of Iowa",
     flag_years: "2017",
-    quote: "I'm a Des Moines 7, but a prison 10",
+    handicap: 10.3,
     boot_years: "0",
     picture: "https://live.staticflickr.com/65535/51892161415_29d73c8daf_m.jpg",
   },
@@ -83,10 +82,10 @@ const players = [
       },
     ],
     age: 28,
-    occupation: "Event Operations Coordinator at Iowa State Athletics",
+    occupation: "Event Operations Coordinator at ISU",
     alma_mater: "Iowa State University",
     flag_years: "2013 | 2015",
-    quote: "That's why they call me big daddy hacks",
+    handicap: 2.6,
     boot_years: "2018 | 2019 | 2020 | 2021",
     picture: "https://live.staticflickr.com/65535/51891506456_408aee8632_m.jpg",
   },
@@ -103,7 +102,7 @@ const players = [
     occupation: "Accounting and Paule Crewe",
     alma_mater: "University of Iowa",
     flag_years: "0",
-    quote: "You guys are bums",
+    handicap: 0.1,
     boot_years: "0",
     picture: "https://live.staticflickr.com/65535/51890564842_bdff880d6c_m.jpg",
   },
@@ -118,11 +117,16 @@ const PlayerBios = () => {
         <div className="bio">
           {players.map((players) => {
             return (
-              <Card>
+              <Card className="player-cards">
                 <CardBody>
                   <CardTitle className="bio-player-name">
                     {players.name}
                   </CardTitle>
+                  <img
+                    className="bio-pic"
+                    src={players.picture}
+                    alt="profile pic"
+                  />
                   <div className="socials">
                     <CardLink href={players.social[0].twitter}>
                       <img
@@ -143,47 +147,42 @@ const PlayerBios = () => {
                       />
                     </CardLink>
                   </div>
-                  <img
-                    className="bio-pic"
-                    src={players.picture}
-                    alt="profile pic"
-                  />
                 </CardBody>
-                <CardBody>
+                <CardBody className="player-card-body">
                   <CardText className="bio-info">
                     <ul className="bio-info-list">
-                      <p>
+                      <p className="player-info">
                         <strong>Age: </strong>{" "}
                         <div className="bio-list-detail">{players.age}</div>{" "}
                       </p>
-                      <p>
+                      <p className="player-info">
                         <strong>Occupation: </strong>{" "}
                         <div className="bio-list-detail">
                           {players.occupation}
                         </div>{" "}
                       </p>
-                      <p>
+                      <p className="player-info">
                         <strong>Alma Mater: </strong>
                         <div className="bio-list-detail">
                           {" "}
                           {players.alma_mater}
                         </div>{" "}
                       </p>
-                      <p>
+                      <p className="player-info">
                         <strong>Flag Years: </strong>{" "}
                         <div className="bio-list-detail">
                           {players.flag_years}
                         </div>{" "}
                       </p>
-                      <p>
+                      <p className="player-info">
                         <strong>Boot Years: </strong>{" "}
                         <div className="bio-list-detail">
                           {players.boot_years}
                         </div>{" "}
                       </p>
-                      <p>
-                        <strong>Famous Quote: </strong>{" "}
-                        <div className="bio-list-detail">{players.quote} </div>{" "}
+                      <p className="player-info">
+                        <strong>Handicap: </strong>{" "}
+                        <div className="bio-list-detail">{players.handicap} </div>{" "}
                       </p>
                     </ul>
                   </CardText>

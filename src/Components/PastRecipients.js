@@ -14,7 +14,7 @@ import {
 import "bootstrap/dist/css/bootstrap.min.css";
 // import {Navbar, Nav, Button} from 'react-bootstrap';
 import SiteNavBar from "./SiteNavBar";
-import Comments from "../Commenting/Comments";
+import Comments from "../Commenting/comments";
 import Scorecards from "./modals/Scorecards";
 
 const flagwinners = [

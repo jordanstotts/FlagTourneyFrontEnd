@@ -2,7 +2,7 @@ import React from "react";
 import { Card, CardGroup, CardImg, CardBody, CardTitle, Row } from "reactstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import SiteNavBar from "./SiteNavBar";
-import Comments from "../Commenting/Comments";
+import Comments from "../Commenting/comments";
 
 const bootwinners = [
   {

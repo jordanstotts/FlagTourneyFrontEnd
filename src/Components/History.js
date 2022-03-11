@@ -1,7 +1,7 @@
 import React from "react";
 import SiteNavBar from "./SiteNavBar";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Comments from "../Commenting/Comments";
+import Comments from "../Commenting/comments";
 
 const History = () => {
   return (

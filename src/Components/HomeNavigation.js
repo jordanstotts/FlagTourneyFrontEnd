@@ -16,7 +16,8 @@ const HomeNavigation = () => {
     <div className="home-layout">
       <div>
         <Navbar color="faded" light>
-          <NavbarToggler className="me-2" onClick={() => setIsOpen(!isOpen)} />
+          <NavbarToggler className="me-2" onClick={() => setIsOpen(true)} />
+          {/* <NavbarToggler className="me-2" onClick={() => setIsOpen(!isOpen)} /> */}
 
           <NavbarBrand className="me-auto" href="/">
             <div className="home-header">
