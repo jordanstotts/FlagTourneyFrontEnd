@@ -7,7 +7,7 @@ const Rules = () => {
   return (
     <div>
       <SiteNavBar />
-      <h1>Rules</h1>
+      <h1 className="rules-header">Rules</h1>
       <div className="rules-layout">
         <div className="rule-section">
           <h3 className="rule-name">Before Play Starts</h3>

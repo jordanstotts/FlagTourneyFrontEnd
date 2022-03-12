@@ -26,7 +26,7 @@ const HomeNavigation = () => {
           </NavbarBrand>
           <Collapse isOpen={isOpen} navbar>
             <Nav navbar>
-              <div>
+              <div >
                 <NavLink active href={"/PlayerBios"}>
                   Player Bios
                 </NavLink>

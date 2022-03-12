@@ -78,22 +78,29 @@ const PredictionList = () => {
   return (
     <div>
       <NextYearInsight />
-      <Navbar />
-      <h3>Prediction List</h3>
-      <table className="table table-striped" style={{ marginTop: 20 }}>
-        <thead>
-          <tr>
-            <th>Boot Winner</th>
-            <th>2nd Place</th>
-            <th>3rd Place</th>
-            <th>4th Place</th>
-            <th>5th Place</th>
-            <th>Flag Winner</th>
-            <th>Action</th>
-          </tr>
-        </thead>
-        <tbody>{predictionList()}</tbody>
-      </table>
+      <div className="public-predictions">
+      {/* <Navbar /> */}
+        <h3>Prediction List</h3>
+        <table className="table table-striped" style={{ marginTop: 20 }}>
+          <thead>
+            <tr>
+              <th>Boot Winner</th>
+              <th>2nd Place</th>
+              <th>3rd Place</th>
+              <th>4th Place</th>
+              <th>5th Place</th>
+              <th>Flag Winner</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>{predictionList()}</tbody>
+        </table>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+      </div>
     </div>
   );
 };

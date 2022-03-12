@@ -7,185 +7,20 @@ import {
   Label,
   Input,
   Button,
-  Col
+  Col,
 } from "reactstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import SiteNavBar from "./SiteNavBar";
-
+import Navbar from "./predictions/navbar";
 
 const NextYearInsight = () => {
   return (
     <div>
       <SiteNavBar />
-      <h1>Insight To Next Year</h1>
-      {/* <Form>
-        <Label>
-          Let us know your predictions!
-        </Label>
-        <FormGroup row>
-          <Label for="exampleSelect" sm={2}>
-            Boot Winner
-          </Label>
-          <Col sm={10}>
-            <Input id="exampleSelect" name="select" type="select">
-            <option> </option>
-            <option>Austin</option>
-            <option>Grant</option>
-            <option>Connor</option>
-            <option>Derrick</option>
-            <option>Jordan</option>
-            <option>Ryan</option>
-            </Input>
-          </Col>
-          <Label for="exampleSelect" sm={2}>
-            2nd
-          </Label>
-          <Col sm={10}>
-            <Input id="exampleSelect" name="select" type="select">
-            <option> </option>
-            <option>Austin</option>
-            <option>Grant</option>
-            <option>Connor</option>
-            <option>Derrick</option>
-            <option>Jordan</option>
-            <option>Ryan</option>
-            </Input>
-          </Col>
-          <Label for="exampleSelect" sm={2}>
-            3rd
-          </Label>
-          <Col sm={10}>
-            <Input id="exampleSelect" name="select" type="select">
-            <option> </option>
-            <option>Austin</option>
-            <option>Grant</option>
-            <option>Connor</option>
-            <option>Derrick</option>
-            <option>Jordan</option>
-            <option>Ryan</option>
-            </Input>
-          </Col>
-          <Label for="exampleSelect" sm={2}>
-            4th
-          </Label>
-          <Col sm={10}>
-            <Input id="exampleSelect" name="select" type="select">
-            <option> </option>
-            <option>Austin</option>
-            <option>Grant</option>
-            <option>Connor</option>
-            <option>Derrick</option>
-            <option>Jordan</option>
-            <option>Ryan</option>
-            </Input>
-          </Col>
-          <Label for="exampleSelect" sm={2}>
-            5th
-          </Label>
-          <Col sm={10}>
-            <Input id="exampleSelect" name="select" type="select">
-            <option> </option>
-            <option>Austin</option>
-            <option>Grant</option>
-            <option>Connor</option>
-            <option>Derrick</option>
-            <option>Jordan</option>
-            <option>Ryan</option>
-            </Input>
-          </Col>
-          <Label for="exampleSelect" sm={2}>
-            Flag Winner
-          </Label>
-          <Col sm={10}>
-            <Input id="exampleSelect" name="select" type="select">
-            <option> </option>
-            <option>Austin</option>
-            <option>Grant</option>
-            <option>Connor</option>
-            <option>Derrick</option>
-            <option>Jordan</option>
-            <option>Ryan</option>
-            </Input>
-          </Col>
-        </FormGroup>
-      </Form>
-      <Label for="exampleSelect">Let us know your predictions!</Label>
-      <Form>
-        <FormGroup>
-          <Input id="exampleSelect" name="select" type="select">
-            <option>Who wins the boot</option>
-            <option>Austin</option>
-            <option>Grant</option>
-            <option>Connor</option>
-            <option>Derrick</option>
-            <option>Jordan</option>
-            <option>Ryan</option>
-          </Input>
-        </FormGroup>
-        <FormGroup>
-          <Input id="exampleSelect" name="select" type="select">
-            <option>2nd place</option>
-            <option>Austin</option>
-            <option>Grant</option>
-            <option>Connor</option>
-            <option>Derrick</option>
-            <option>Jordan</option>
-            <option>Ryan</option>
-          </Input>
-        </FormGroup>
-        <FormGroup>
-          <Input id="exampleSelect" name="select" type="select">
-            <option>3rd place</option>
-
-            <option>Austin</option>
-            <option>Grant</option>
-            <option>Connor</option>
-            <option>Derrick</option>
-            <option>Jordan</option>
-            <option>Ryan</option>
-          </Input>
-        </FormGroup>
-        <FormGroup>
-          <Input id="exampleSelect" name="select" type="select">
-            <option>4th place</option>
-
-            <option>Austin</option>
-            <option>Grant</option>
-            <option>Connor</option>
-            <option>Derrick</option>
-            <option>Jordan</option>
-            <option>Ryan</option>
-          </Input>
-        </FormGroup>
-        <FormGroup>
-          <Input id="exampleSelect" name="select" type="select">
-            <option>5th place</option>
-
-            <option>Austin</option>
-            <option>Grant</option>
-            <option>Connor</option>
-            <option>Derrick</option>
-            <option>Jordan</option>
-            <option>Ryan</option>
-          </Input>
-        </FormGroup>
-        <FormGroup>
-          <Label for="exampleSelect">Who wins the flag?</Label> 
-          <Input id="exampleSelect" name="select" type="select">
-            <option>Who gets the flag</option>
-
-            <option>Austin</option>
-            <option>Grant</option>
-            <option>Connor</option>
-            <option>Derrick</option>
-            <option>Jordan</option>
-            <option>Ryan</option>
-          </Input>
-        </FormGroup>
-        <Button>Submit</Button>
-      </Form> */}
+      <h1 className="insight-header">Insight To Next Year</h1>
+      <Navbar />
       <div className="predictions-layout">
-        <div>
+        <div className="our-predictions">
           <p>Austin's predictions:</p>
           <ListGroup numbered>
             <ListGroupItem>Grant(boot)</ListGroupItem>
@@ -195,7 +30,7 @@ const NextYearInsight = () => {
             <ListGroupItem>Connor(flag)</ListGroupItem>
           </ListGroup>
         </div>
-        <div>
+        <div className="our-predictions">
           <p>Grant's predictions:</p>
           <ListGroup numbered>
             <ListGroupItem>Grant(boot)</ListGroupItem>
@@ -205,7 +40,7 @@ const NextYearInsight = () => {
             <ListGroupItem>Connor(flag)</ListGroupItem>
           </ListGroup>
         </div>
-        <div>
+        <div className="our-predictions">
           <p>Connor's predictions:</p>
           <ListGroup numbered>
             <ListGroupItem>Grant(boot)</ListGroupItem>
@@ -215,7 +50,7 @@ const NextYearInsight = () => {
             <ListGroupItem>Connor(flag)</ListGroupItem>
           </ListGroup>
         </div>
-        <div>
+        <div className="our-predictions">
           <p>Derricks's predictions:</p>
           <ListGroup numbered>
             <ListGroupItem>Grant(boot)</ListGroupItem>
@@ -225,7 +60,7 @@ const NextYearInsight = () => {
             <ListGroupItem>Connor(flag)</ListGroupItem>
           </ListGroup>
         </div>
-        <div>
+        <div className="our-predictions">
           <p>Jordan's predictions:</p>
           <ListGroup numbered>
             <ListGroupItem>Grant(boot)</ListGroupItem>
@@ -235,7 +70,7 @@ const NextYearInsight = () => {
             <ListGroupItem>Connor(flag)</ListGroupItem>
           </ListGroup>
         </div>
-        <div>
+        <div className="our-predictions">
           <p>Ryan's predictions:</p>
           <ListGroup numbered>
             <ListGroupItem>Grant(boot)</ListGroupItem>
@@ -246,7 +81,6 @@ const NextYearInsight = () => {
           </ListGroup>
         </div>
       </div>
-
     </div>
   );
 };

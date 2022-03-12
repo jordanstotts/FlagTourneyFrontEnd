@@ -97,13 +97,13 @@ const PastRecipients = () => {
   return (
     <div>
       <SiteNavBar />
-      <h1>Flag Recipients</h1>
+      <h1 className="flag-winner-header">Flag Recipients</h1>
 
       <div className="past-recipient-layout">
         {flagwinners.map((flagwinners) => {
           return (
             <CardGroup>
-              <Card>
+              <Card className="flag-winner-card">
                 <CardBody>
                   <CardTitle>
                     {flagwinners.name} - {flagwinners.course} -{" "}
