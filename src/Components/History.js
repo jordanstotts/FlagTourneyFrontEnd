@@ -1,7 +1,6 @@
 import React from "react";
 import SiteNavBar from "./SiteNavBar";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Comments from "../Commenting/comments";
 
 const History = () => {
   return (
@@ -19,6 +18,7 @@ const History = () => {
             holes of golf. The flag is then flown with pride for one year for
             all the world to see.
           </p>
+          <br/>
           <p>
             In 2018 we decided it was time to introduce a new trophy for those
             that suck at golf a little less than everyone else during the

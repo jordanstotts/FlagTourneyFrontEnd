@@ -11,7 +11,6 @@ import {
 } from "reactstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import SiteNavBar from "./SiteNavBar";
-import CreatePrediction from "./predictions/CreatePrediction";
 
 
 const NextYearInsight = () => {

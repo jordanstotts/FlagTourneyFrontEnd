@@ -2,7 +2,6 @@ import React from "react";
 import { Card, CardGroup, CardImg, CardBody, CardTitle, Row } from "reactstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import SiteNavBar from "./SiteNavBar";
-import Comments from "../Commenting/comments";
 
 const bootwinners = [
   {
@@ -35,7 +34,7 @@ const BootWinners = () => {
   return (
     <div className="boot-winners">
       <SiteNavBar />
-      <h1>Boot Winners</h1>
+      <h1 className="boot-header">Boot Winners</h1>
       <p className="pre-boot">
         *pre boot trophy winners: 2013 - Ryan Biegger | 2014 - Jordan Stotts |
         2015 - Jordan Stotts | 2016 - Ryan Biegger | 2017 - Ryan Biegger
@@ -44,7 +43,7 @@ const BootWinners = () => {
         {bootwinners.map((bootwinners) => {
           return (
             <CardGroup width="250px">
-              <Card>
+              <Card className="boot-winner-card">
                 <CardBody>
                   <CardTitle className="boot-winner-title">
                     {bootwinners.name} <br /> {bootwinners.course} <br />
@@ -57,7 +56,6 @@ const BootWinners = () => {
                   src={bootwinners.bootpic}
                 />
               </Card>
-              <Comments currentUserId="1" />
             </CardGroup>
           );
         })}

@@ -10,7 +10,6 @@ import History from "./Components/History";
 import Rules from "./Components/Rules";
 import SiteNavBar from "./Components/SiteNavBar";
 import HomeNavigation from "./Components/HomeNavigation";
-import Comments from "./Commenting/comments";
 
 
 // import CreatePrediction from "./CreatePrediction";
