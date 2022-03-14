@@ -2,6 +2,9 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import NextYearInsight from "../NextYearInsight";
 import Navbar from "./navbar";
+import Graph from "./graph";
+import { Chart } from "@progress/kendo-react-charts";
+import PredictionChart from "./chart";
 
 const Prediction = (props) => (
   <tr>
@@ -29,6 +32,8 @@ const Prediction = (props) => (
 );
 
 const PredictionList = () => {
+
+
   const [predictions, setPredictions] = useState([]);
 
   // This method fetches the records from the database.
@@ -78,6 +83,8 @@ const PredictionList = () => {
   return (
     <div>
       <NextYearInsight />
+      <Graph />
+      <PredictionChart />
       <div className="public-predictions">
       {/* <Navbar /> */}
         <h3>Prediction List</h3>
@@ -101,6 +108,7 @@ const PredictionList = () => {
         <br/>
         <br/>
       </div>
+
     </div>
   );
 };
