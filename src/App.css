@@ -494,8 +494,14 @@ p {
 
 #prediction-chart {
   background-color: white;
-  font-size: 50pt;
+  font-size: 12pt;
   color: black;
   height: 500px;
-  width: 500px;
+  width: 700px;
+  border: 5px solid purple;
+}
+
+.k-chart-surface {
+  background-color: pink;
+  
 }
