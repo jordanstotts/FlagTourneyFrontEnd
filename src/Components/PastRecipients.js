@@ -135,50 +135,52 @@ const PastRecipients = () => {
             </CardGroup>
           );
         })}
+        {/* <div className="scorecard-buttons"> */}
         <button className="openModalBtn" onClick={() => setOpenModal1(true)}>
-          Open
+          Scorecard
         </button>
         {openModal1 && <Scorecard1 closeModal1={setOpenModal1} />}
 
         <button className="openModalBtn" onClick={() => setOpenModal2(true)}>
-          Open
+        Scorecard
         </button>
         {openModal2 && <Scorecard2 closeModal2={setOpenModal2} />}
 
         <button className="openModalBtn" onClick={() => setOpenModal3(true)}>
-          Open
+        Scorecard
         </button>
         {openModal3 && <Scorecard3 closeModal3={setOpenModal3} />}
 
         <button className="openModalBtn" onClick={() => setOpenModal4(true)}>
-          Open
+        Scorecard
         </button>
         {openModal4 && <Scorecard4 closeModal4={setOpenModal4} />}
 
         <button className="openModalBtn" onClick={() => setOpenModal5(true)}>
-          Open
+        Scorecard
         </button>
         {openModal5 && <Scorecard5 closeModal5={setOpenModal5} />}
 
         <button className="openModalBtn" onClick={() => setOpenModal6(true)}>
-          Open
+        Scorecard
         </button>
         {openModal6 && <Scorecard6 closeModal6={setOpenModal6} />}
 
         <button className="openModalBtn" onClick={() => setOpenModal7(true)}>
-          Open
+        Scorecard
         </button>
         {openModal7 && <Scorecard7 closeModal7={setOpenModal7} />}
 
         <button className="openModalBtn" onClick={() => setOpenModal8(true)}>
-          Open
+        Scorecard
         </button>
         {openModal8 && <Scorecard8 closeModal8={setOpenModal8} />}
 
         <button className="openModalBtn" onClick={() => setOpenModal9(true)}>
-          Open
+        Scorecard
         </button>
         {openModal9 && <Scorecard9 closeModal9={setOpenModal9} />}
+        {/* </div> */}
       </div>
       <div></div>
     </div>

@@ -32,8 +32,6 @@ const Prediction = (props) => (
 );
 
 const PredictionList = () => {
-
-
   const [predictions, setPredictions] = useState([]);
 
   // This method fetches the records from the database.
@@ -86,14 +84,14 @@ const PredictionList = () => {
       <h1 className="insight-header">Insight To Next Year</h1>
       <Navbar />
       <div className="players-public-picks">
-      <NextYearInsight />
-      <PredictionChart />
+        <NextYearInsight />
+        <PredictionChart />
       </div>
       <div className="public-predictions">
         <h3>Prediction List</h3>
         <table className="table" style={{ marginTop: 20 }}>
-          <thead >
-            <tr >
+          <thead>
+            <tr>
               <th className="table-headers">Boot Winner</th>
               <th className="table-headers">2nd Place</th>
               <th className="table-headers">3rd Place</th>
@@ -105,13 +103,7 @@ const PredictionList = () => {
           </thead>
           <tbody>{predictionList()}</tbody>
         </table>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
       </div>
-
     </div>
   );
 };

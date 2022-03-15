@@ -16,6 +16,7 @@ import {
 } from "@progress/kendo-react-charts";
 import "hammerjs";
 import "@progress/kendo-theme-default/dist/all.css";
+import './create.css'
 
 const categories = ["Jordan", "Derrick", "Austin", "Connor", "Grant", "Ryan"];
 
@@ -126,7 +127,7 @@ const PredictionChart = () => {
   return (
     <div id="prediction-chart">
       <Chart>
-        <ChartTitle text="The Publics Opinion" />
+        <ChartTitle text="The Public's Opinion" />
         <ChartValueAxis >
           <ChartValueAxisItem
             title={{
@@ -152,7 +153,7 @@ const PredictionChart = () => {
           <ChartSeriesItem type="bar" name="Boot" color={"#2c3e50"} data={bootPicks} />
           <ChartSeriesItem type="bar" name="Flag" color={"#efb1f2"} data={flagPicks} />
         </ChartSeries>
-        <ChartLegend position="bottom" orientation="horizontal"/>
+        {/* <ChartLegend position="bottom" orientation="horizontal"/> */}
         <ChartTooltip />
       <ChartLegend />
 

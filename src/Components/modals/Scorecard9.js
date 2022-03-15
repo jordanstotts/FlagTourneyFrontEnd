@@ -1,23 +1,17 @@
 import React from "react";
-import "./Scorecard.css"
+import "./Scorecard.css";
 
 const Scorecard9 = ({ closeModal9 }) => {
   return (
     <div className="modalBackground">
       <div className="modalContainer">
-        <div className="titleCloseBtn">
-          <button onClick={() => closeModal9(false)}> X </button>
-        </div>
-        <div className="title">
-          <h1>Are you sure you want to continue</h1>
-        </div>
         <div className="body">
-          <img src="" />
-          <p>scorecard 9</p>
+          <img src="https://live.staticflickr.com/65535/51891595598_e00abe8d15_c.jpg" />
         </div>
         <div className="footer">
-          <button className="cancelBtn" onClick={() => closeModal9(false)}>Cancel</button>
-          <button>Continue</button>
+          <button className="cancelBtn" onClick={() => closeModal9(false)}>
+            Cancel
+          </button>
         </div>
       </div>
     </div>
