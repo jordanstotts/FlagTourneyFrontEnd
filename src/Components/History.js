@@ -7,7 +7,7 @@ const History = () => {
     <div>
       <SiteNavBar />
       <div className="history-layout">
-        <h1>History</h1>
+        <h1 className="history-header">History</h1>
         <div className="history-content">
           <p>
             The “Where's My Ball?" Tournament started in the summer of 2013
@@ -18,7 +18,7 @@ const History = () => {
             holes of golf. The flag is then flown with pride for one year for
             all the world to see.
           </p>
-          <br/>
+          <br />
           <p>
             In 2018 we decided it was time to introduce a new trophy for those
             that suck at golf a little less than everyone else during the
@@ -31,14 +31,27 @@ const History = () => {
             Boot' and is usually filled with the finest hefeweizen beer Iowa has
             to offer.
           </p>
+          <br />
+
+          <p>
+            Starting in 2022, a new rule was introduced to include the golf God
+            himself. The one and only, Mr. Austin Howe. Now in order to win the
+            boot your handicap will come in to play. Our most recent handicaps
+            will be taken from The Grint app the day of the tournament and will
+            be used to determine the winner of what some say is one of the most
+            sought after trophies in golf. Austin has joined us in years past
+            but does in fact not suck at golf ever, so this rule allows for a much
+            more competitive playing field (even though he will still probably win).
+            Handicapped scores will not be used for the flag...if you suck, you
+            suck.
+          </p>
         </div>
         <img
           className="history-flag-logo"
-          src="https://live.staticflickr.com/65535/51906509736_1f30d6643b_m.jpg"
+          src="https://live.staticflickr.com/65535/51940837073_328437f02a_m.jpg"
           alt="flag_logo"
         />
       </div>
-
     </div>
   );
 };

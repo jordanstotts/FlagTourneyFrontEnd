@@ -121,7 +121,7 @@ const PastRecipients = () => {
             <CardGroup>
               <Card className="flag-winner-card">
                 <CardBody>
-                  <CardTitle>
+                  <CardTitle className="flag-winner-title">
                     {flagwinners.name} - {flagwinners.course} -{" "}
                     {flagwinners.year}
                   </CardTitle>

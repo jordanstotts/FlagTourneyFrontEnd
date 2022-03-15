@@ -1,22 +1,28 @@
 form {
-    margin-top: 60px;
+  margin-top: 60px;
 }
 
 h3 {
-    color: whitesmoke;
-    margin-top: 75px;
+  color: whitesmoke;
+  margin-top: 75px;
+  font-family: "Oswald", sans-serif;
+  font-size: 30pt;
 }
 
 label {
-    color: whitesmoke;
+  color: whitesmoke;
 }
 
 .btn-primary {
-    margin-top: 25px;
-    background-color: #efb1f2
+  margin-top: 25px;
+  background-color: #efb1f2;
+}
+
+.btn-primary:hover {
+  background-color: #4cdbf6;
 }
 
 .form-group {
-    width: 500px;
-    margin: 15px auto auto auto;
+  width: 500px;
+  margin: 15px auto auto auto;
 }

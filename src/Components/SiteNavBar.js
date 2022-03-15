@@ -4,43 +4,43 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 const SiteNavBar = () => {
   return (
-    <div className="site-nave-layout">
+    <div className="site-nav-layout">
       <Nav>
         <div>
           <NavLink active href={"/"}>
             <img
-              src="https://live.staticflickr.com/65535/51906509736_1f30d6643b_m.jpg"
+              src="https://live.staticflickr.com/65535/51940837073_328437f02a_m.jpg"
               className="flag-icon"
             />
           </NavLink>
         </div>
         <div>
-          <NavLink active href={"/PlayerBios"}>
+          <NavLink className="site-nav-link" active href={"/PlayerBios"}>
             Player Bios
           </NavLink>
         </div>
         <div>
-          <NavLink active href={"/FlagRecipients"}>
+          <NavLink className="site-nav-link" active href={"/FlagRecipients"}>
             Flag Recipients
           </NavLink>
         </div>
         <div>
-          <NavLink active href={"/BootRecipients"}>
+          <NavLink className="site-nav-link" active href={"/BootRecipients"}>
             Boot Recipients
           </NavLink>
         </div>
         <div>
-          <NavLink active href={"/InsightToNextYear"}>
+          <NavLink className="site-nav-link" active href={"/InsightToNextYear"}>
             Insight To Next Year
           </NavLink>
         </div>
         <div>
-          <NavLink active href={"/History"}>
+          <NavLink className="site-nav-link" active href={"/History"}>
             History
           </NavLink>
         </div>
         <div>
-          <NavLink active href={"/Rules"}>
+          <NavLink className="site-nav-link" active href={"/Rules"}>
             Rules
           </NavLink>
         </div>
