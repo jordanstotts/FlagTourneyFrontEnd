@@ -2,9 +2,9 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import NextYearInsight from "../NextYearInsight";
 import Navbar from "./navbar";
-import Graph from "./graph";
 import { Chart } from "@progress/kendo-react-charts";
 import PredictionChart from "./chart";
+import SiteNavBar from "../SiteNavBar";
 
 const Prediction = (props) => (
   <tr>
@@ -82,22 +82,25 @@ const PredictionList = () => {
   // This following section will display the table with the records of individuals.
   return (
     <div>
+      <SiteNavBar />
+      <h1 className="insight-header">Insight To Next Year</h1>
+      <Navbar />
+      <div className="players-public-picks">
       <NextYearInsight />
-      <Graph />
       <PredictionChart />
+      </div>
       <div className="public-predictions">
-      {/* <Navbar /> */}
         <h3>Prediction List</h3>
-        <table className="table table-striped" style={{ marginTop: 20 }}>
-          <thead>
-            <tr>
-              <th>Boot Winner</th>
-              <th>2nd Place</th>
-              <th>3rd Place</th>
-              <th>4th Place</th>
-              <th>5th Place</th>
-              <th>Flag Winner</th>
-              <th>Action</th>
+        <table className="table" style={{ marginTop: 20 }}>
+          <thead >
+            <tr >
+              <th className="table-headers">Boot Winner</th>
+              <th className="table-headers">2nd Place</th>
+              <th className="table-headers">3rd Place</th>
+              <th className="table-headers">4th Place</th>
+              <th className="table-headers">5th Place</th>
+              <th className="table-headers">Flag Winner</th>
+              <th className="table-headers">Action</th>
             </tr>
           </thead>
           <tbody>{predictionList()}</tbody>

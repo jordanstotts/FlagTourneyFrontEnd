@@ -259,8 +259,8 @@ html {
   height: 200px;
   /* width: 1500px;
   height: 200px; */
-  margin-top: 75px;
-  margin-left: 75px;
+  /* margin-top: 75px;
+  margin-left: 75px; */
   /* margin: 75px auto 175px auto; */
 }
 
@@ -290,7 +290,7 @@ li.prediction-even.list-group-item {
 }
 
 #prediction {
-  color: red;
+  color: #474747;
 }
 
 .list-group-item {
@@ -317,10 +317,19 @@ li.prediction-even.list-group-item {
 }
 
 .public-predictions {
-  position: relative;
-  top: 35rem;
-  margin-bottom: 200px;
+  /* position: relative;
+  top: 15rem; */
+  /* margin-bottom: 200px; */
+  margin: 200px auto 200px auto;
   color: whitesmoke;
+  width: 1000px;
+  display: inline-block;
+  /* justify-content: center; */
+}
+
+.table-headers {
+  text-align: center;
+  /* justify-items: center; */
 }
 
 .insight-subhead {
@@ -479,12 +488,14 @@ p {
 }
 
 
-/* GRAPH */
+
+/* =============== Graph Component =============== */
+
 .barchart {
   background-color: yellow;
   color: black;
-  height: 450px;
-  width: 450px;
+  height: 425px;
+  width: 425px;
 }
 
 .graph-svg {
@@ -494,14 +505,28 @@ p {
 
 #prediction-chart {
   background-color: white;
-  font-size: 12pt;
+  background: transparent;
+  /* font-size: 12pt; */
   color: black;
-  height: 500px;
+  height: fit-content;
   width: 700px;
   border: 5px solid purple;
+  margin-top: 30px;
+
+  /* margin: auto auto auto 500px; */
 }
 
 .k-chart-surface {
   background-color: pink;
   
+}
+
+.players-public-picks {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 100px;
+}
+
+#axis-title {
+  margin-top: 10px;
 }
