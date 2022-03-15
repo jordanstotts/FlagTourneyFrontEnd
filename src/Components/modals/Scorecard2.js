@@ -1,21 +1,22 @@
 import React from "react";
 import "./Scorecard.css"
 
-const Scorecards = ({ closeModal }) => {
+const Scorecard2 = ({ closeModal2 }) => {
   return (
     <div className="modalBackground">
       <div className="modalContainer">
         <div className="titleCloseBtn">
-          <button onClick={() => closeModal(false)}> X </button>
+          <button onClick={() => closeModal2(false)}> X </button>
         </div>
         <div className="title">
           <h1>Are you sure you want to continue</h1>
         </div>
         <div className="body">
-          <p>The next page is awesome</p>
+          <img src="" />
+          <p>scorecard 2</p>
         </div>
         <div className="footer">
-          <button className="cancelBtn" onClick={() => closeModal(false)}>Cancel</button>
+          <button className="cancelBtn" onClick={() => closeModal2(false)}>Cancel</button>
           <button>Continue</button>
         </div>
       </div>
@@ -23,4 +24,4 @@ const Scorecards = ({ closeModal }) => {
   );
 };
 
-export default Scorecards;
+export default Scorecard2;

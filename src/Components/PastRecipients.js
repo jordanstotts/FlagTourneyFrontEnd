@@ -14,7 +14,15 @@ import {
 import "bootstrap/dist/css/bootstrap.min.css";
 // import {Navbar, Nav, Button} from 'react-bootstrap';
 import SiteNavBar from "./SiteNavBar";
-import Scorecards from "./modals/Scorecards";
+import Scorecard1 from "./modals/Scorecard1";
+import Scorecard2 from "./modals/Scorecard2";
+import Scorecard3 from "./modals/Scorecard3";
+import Scorecard4 from "./modals/Scorecard4";
+import Scorecard5 from "./modals/Scorecard5";
+import Scorecard6 from "./modals/Scorecard6";
+import Scorecard7 from "./modals/Scorecard7";
+import Scorecard8 from "./modals/Scorecard8";
+import Scorecard9 from "./modals/Scorecard9";
 
 const flagwinners = [
   {
@@ -92,7 +100,15 @@ const flagwinners = [
 ];
 
 const PastRecipients = () => {
-  const [openModal, setOpenModal] = useState(false);
+  const [openModal1, setOpenModal1] = useState(false);
+  const [openModal2, setOpenModal2] = useState(false);
+  const [openModal3, setOpenModal3] = useState(false);
+  const [openModal4, setOpenModal4] = useState(false);
+  const [openModal5, setOpenModal5] = useState(false);
+  const [openModal6, setOpenModal6] = useState(false);
+  const [openModal7, setOpenModal7] = useState(false);
+  const [openModal8, setOpenModal8] = useState(false);
+  const [openModal9, setOpenModal9] = useState(false);
 
   return (
     <div>
@@ -115,56 +131,54 @@ const PastRecipients = () => {
                   alt="flag winner"
                   src={flagwinners.flagpic}
                 />
-                <button
-                  className="openModalBtn"
-                  onClick={() => 
-                    setOpenModal(true)
-                  }
-                >
-                  Open
-                </button>
-                {openModal && <Scorecards closeModal={setOpenModal}/>}
-
-                {/* <div>
-                  <Button color="danger" onClick={() => setIsOpen(!isOpen)}>
-                    Click Me
-                  </Button>
-                  <Modal toggle={() => setIsOpen(!isOpen)}>
-                    <ModalHeader toggle={() => setIsOpen(!isOpen)}>
-                      Modal title
-                    </ModalHeader>
-                    <ModalBody>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                      Duis aute irure dolor in reprehenderit in voluptate velit
-                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                      sint occaecat cupidatat non proident, sunt in culpa qui
-                      officia deserunt mollit anim id est laborum.
-                    </ModalBody>
-                    <ModalFooter>
-                      <Button
-                        color="primary"
-                        onClick={() => setIsOpen(!isOpen)}
-                      >
-                        Do Something
-                      </Button>{" "}
-                      <Button onClick={() => setIsOpen(!isOpen)}>Cancel</Button>
-                    </ModalFooter>
-                  </Modal>
-                </div> */}
-
-                {/* <br />
-                <CardImg
-                  className="scorecard-pic"
-                  alt="scorecard"
-                  src={flagwinners.scorecard}
-                /> */}
               </Card>
             </CardGroup>
           );
         })}
+        <button className="openModalBtn" onClick={() => setOpenModal1(true)}>
+          Open
+        </button>
+        {openModal1 && <Scorecard1 closeModal1={setOpenModal1} />}
+
+        <button className="openModalBtn" onClick={() => setOpenModal2(true)}>
+          Open
+        </button>
+        {openModal2 && <Scorecard2 closeModal2={setOpenModal2} />}
+
+        <button className="openModalBtn" onClick={() => setOpenModal3(true)}>
+          Open
+        </button>
+        {openModal3 && <Scorecard3 closeModal3={setOpenModal3} />}
+
+        <button className="openModalBtn" onClick={() => setOpenModal4(true)}>
+          Open
+        </button>
+        {openModal4 && <Scorecard4 closeModal4={setOpenModal4} />}
+
+        <button className="openModalBtn" onClick={() => setOpenModal5(true)}>
+          Open
+        </button>
+        {openModal5 && <Scorecard5 closeModal5={setOpenModal5} />}
+
+        <button className="openModalBtn" onClick={() => setOpenModal6(true)}>
+          Open
+        </button>
+        {openModal6 && <Scorecard6 closeModal6={setOpenModal6} />}
+
+        <button className="openModalBtn" onClick={() => setOpenModal7(true)}>
+          Open
+        </button>
+        {openModal7 && <Scorecard7 closeModal7={setOpenModal7} />}
+
+        <button className="openModalBtn" onClick={() => setOpenModal8(true)}>
+          Open
+        </button>
+        {openModal8 && <Scorecard8 closeModal8={setOpenModal8} />}
+
+        <button className="openModalBtn" onClick={() => setOpenModal9(true)}>
+          Open
+        </button>
+        {openModal9 && <Scorecard9 closeModal9={setOpenModal9} />}
       </div>
       <div></div>
     </div>
