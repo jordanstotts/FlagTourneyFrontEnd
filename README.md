@@ -18,7 +18,7 @@ It’s not about winning the tournament, it’s about making sure you don’t lo
 - Express
 - React
 - Node
-- AWS (potentially)
+- KendoReact
 - Reactstrap
 - Heroku
 
