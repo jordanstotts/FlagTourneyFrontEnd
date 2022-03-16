@@ -26,5 +26,6 @@ It’s not about winning the tournament, it’s about making sure you don’t lo
 - Add a form for people to suggest courses
 - Add a weather API to help see what kind of day it will be like on the course 
 - Add a photo gallery section with pictures from past tournaments
+- Add user auth and comment sections under the scorecards
 
 ## Wireframes
