@@ -8,9 +8,9 @@ It’s not about winning the tournament, it’s about making sure you don’t lo
 
 
 ## User Stories
-- As a user, I'll be able to create an account in order to upload images and post comments.
-- As a user, I'll be able to see the history and rules of the tournament, player bios, as well as past winners and losers.
-- As a user, I'll be able to fill out a course suggestion form that will help influence where future tournaments will be played. 
+- As a user, I'll be able to see past winners of the flag and boot as well as the scorecards
+- As a user, I'll be able to see the history and rules of the tournament along with player bios
+- As a user, I'll be able to access players social medias 
 - As a user, I'll be able to vote on who I think will win and lose the upcoming tournament.
 
 ## Technologies Used
@@ -23,6 +23,8 @@ It’s not about winning the tournament, it’s about making sure you don’t lo
 - Heroku
 
 ## Stretch Goals
+- Add a form for people to suggest courses
 - Add a weather API to help see what kind of day it will be like on the course 
+- Add a photo gallery section with pictures from past tournaments
 
 ## Wireframes
