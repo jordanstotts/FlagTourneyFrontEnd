@@ -53,7 +53,7 @@ const players = [
     flag_years: "2018 | 2019",
     handicap: 13.1,
     boot_years: "0",
-    picture: "https://live.staticflickr.com/65535/51891505721_7c6324e813_m.jpg",
+    picture: "https://live.staticflickr.com/65535/51940980928_2a9ed92f2d_m.jpg",
   },
   {
     name: "Connor Girkin",
