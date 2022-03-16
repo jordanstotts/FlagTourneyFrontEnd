@@ -28,4 +28,4 @@ It’s not about winning the tournament, it’s about making sure you don’t lo
 - Add a photo gallery section with pictures from past tournaments
 - Add user auth and comment sections under the scorecards
 
-## Wireframes
+
