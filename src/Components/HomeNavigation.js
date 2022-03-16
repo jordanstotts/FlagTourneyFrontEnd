@@ -16,16 +16,17 @@ const HomeNavigation = () => {
     <div className="home-layout">
       <div>
         <Navbar color="faded" light>
-          {/* <NavbarToggler className="me-2" onClick={() => setIsOpen(true)} /> */}
-          <NavbarToggler className="me-2" onClick={() => setIsOpen(true)} />
-
+          <NavbarToggler
+            id="hamburger"
+            className="me-2"
+            onClick={() => setIsOpen(!isOpen)}
+          />
           <NavbarBrand className="me-auto" href="/">
             <div className="home-header">
               The Annual "Where's My Ball?" Tournament
             </div>
           </NavbarBrand>
-          {/* <Collapse onClick={() => setIsOpen(true)} navbar> */}
-          <Collapse isOpen={isOpen} navbar>
+          <Collapse id="collapse" isOpen={!isOpen} navbar>
             <Nav navbar>
               <div className="home-nav-dropdown">
                 <NavLink active href={"/PlayerBios"}>

@@ -28,6 +28,17 @@ html {
   margin: auto;
 }
 
+#hamburger {
+  border: 2px solid whitesmoke;
+  background-color: whitesmoke;
+  margin: auto;
+}
+
+/* #collapse {
+  height: 0;
+  display: none;
+} */
+
 .home-header {
   font-size: 40pt;
   color: #e9e9e9;
