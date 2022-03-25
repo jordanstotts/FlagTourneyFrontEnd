@@ -1,25 +1,9 @@
-import React, { useEffect, useRef } from "react";
-import {
-  ListGroup,
-  ListGroupItem,
-  Form,
-  FormGroup,
-  Label,
-  Input,
-  Button,
-  Col,
-} from "reactstrap";
+import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import SiteNavBar from "./SiteNavBar";
-import Navbar from "./predictions/navbar";
-import * as d3 from "d3";
 
 const NextYearInsight = () => {
   return (
     <div>
-      {/* <SiteNavBar /> */}
-      {/* <h1 className="insight-header">Insight To Next Year</h1> */}
-      {/* <Navbar /> */}
       <div className="predictions-layout">
         <div className="our-predictions">
           <p id="prediction-name">Austin's predictions:</p>

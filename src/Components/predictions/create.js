@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router";
 
 export default function Create() {
@@ -45,7 +45,6 @@ export default function Create() {
       fifth: "",
       flag: "",
     });
-    //    setForm({ boot: e.target.value, second: e.target.value, third: e.target.value, fourth: e.target.value, fifth: e.target.value, flag: e.target.value });
     navigate("/InsightToNextYear");
   }
 

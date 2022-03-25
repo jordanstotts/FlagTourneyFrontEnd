@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import NextYearInsight from "../NextYearInsight";
 import Navbar from "./navbar";
-import { Chart } from "@progress/kendo-react-charts";
 import PredictionChart from "./chart";
 import SiteNavBar from "../SiteNavBar";
 
@@ -53,7 +52,6 @@ const PredictionList = () => {
 
     return;
   }, [predictions.length]);
-  console.log(predictions);
 
   // This method will delete a record
   async function deletePrediction(id) {

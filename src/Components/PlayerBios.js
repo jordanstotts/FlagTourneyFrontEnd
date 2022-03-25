@@ -5,6 +5,7 @@ import SiteNavBar from "./SiteNavBar";
 
 const players = [
   {
+    id: 1,
     name: "Jordan Stotts",
     social: [
       {
@@ -18,10 +19,11 @@ const players = [
     alma_mater: "University of Sioux Falls",
     flag_years: "0",
     handicap: 12.2,
-    boot_years: "0",
+    boot_years: "2014 | 2015",
     picture: "https://live.staticflickr.com/65535/51891505751_69ce94cd32_m.jpg",
   },
   {
+    id: 2,
     name: "Derrick Wiley",
     social: [
       {
@@ -39,6 +41,7 @@ const players = [
     picture: "https://live.staticflickr.com/65535/51891505766_ff56026d56_m.jpg",
   },
   {
+    id: 3,
     name: "Ryan Biegger",
     social: [
       {
@@ -52,10 +55,11 @@ const players = [
     alma_mater: "University of Northern Iowa",
     flag_years: "2018 | 2019",
     handicap: 13.1,
-    boot_years: "0",
+    boot_years: "2013 | 2016 | 2017",
     picture: "https://live.staticflickr.com/65535/51940980928_2a9ed92f2d_m.jpg",
   },
   {
+    id: 4,
     name: "Connor Girkin",
     social: [
       {
@@ -73,6 +77,7 @@ const players = [
     picture: "https://live.staticflickr.com/65535/51892161415_29d73c8daf_m.jpg",
   },
   {
+    id: 5,
     name: "Grant Luther",
     social: [
       {
@@ -90,6 +95,7 @@ const players = [
     picture: "https://live.staticflickr.com/65535/51891506456_408aee8632_m.jpg",
   },
   {
+    id: 6,
     name: "Austin Howe",
     social: [
       {
@@ -107,7 +113,6 @@ const players = [
     picture: "https://live.staticflickr.com/65535/51890564842_bdff880d6c_m.jpg",
   },
 ];
-console.log(players);
 const PlayerBios = () => {
   return (
     <div>
@@ -117,7 +122,7 @@ const PlayerBios = () => {
         <div className="bio">
           {players.map((players) => {
             return (
-              <Card className="player-cards">
+              <Card className="player-cards" key={players.id}>
                 <CardBody>
                   <CardTitle className="bio-player-name">
                     {players.name}
@@ -132,18 +137,21 @@ const PlayerBios = () => {
                       <img
                         src="https://cdn-icons-png.flaticon.com/512/124/124021.png"
                         className="social-icon"
+                        alt="twitter"
                       />
                     </CardLink>
                     <CardLink href={players.social[0].ig}>
                       <img
                         src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"
                         className="social-icon"
+                        alt="instagram"
                       />
                     </CardLink>
                     <CardLink href={players.social[0].facebook}>
                       <img
                         src="https://cdn-icons-png.flaticon.com/512/733/733547.png"
                         className="social-icon"
+                        alt="facebook"
                       />
                     </CardLink>
                   </div>
@@ -182,7 +190,9 @@ const PlayerBios = () => {
                       </p>
                       <p className="player-info">
                         <strong>Handicap: </strong>{" "}
-                        <div className="bio-list-detail">{players.handicap} </div>{" "}
+                        <div className="bio-list-detail">
+                          {players.handicap}{" "}
+                        </div>{" "}
                       </p>
                     </ul>
                   </CardText>

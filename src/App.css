@@ -1,18 +1,20 @@
 .App {
   text-align: center;
-  /* background-color: #efb1f2; */
-  /* background-image: url("https://www.onlygfx.com/wp-content/uploads/2021/04/white-triangle-pattern-seamless-background-1-cover.jpg"); */
-  background-image: url("https://static.vecteezy.com/system/resources/thumbnails/001/330/193/small/black-angled-paper-slits-design-free-vector.jpg");
-  /* background-image: url("https://designshack.net/wp-content/uploads/black-texture-background.jpg"); */
-  /* background-size: cover; */
+  background-color: #242222;
 }
 
 html {
-  /* background-color: #4cdbf6; */
-  background-image: url("https://static.vecteezy.com/system/resources/thumbnails/001/330/193/small/black-angled-paper-slits-design-free-vector.jpg");
+  background-color: #242222;
 }
 
 /* =============== Color Scheme =============== */
+/* slate grey - #242222
+whitesmoke - #f5f5f5
+pink - #efb1f2
+blue - #4cdbf6
+light grey - #c4c4c4
+black - #000000
+dark grey - #474747 */
 
 /* =============== Fonts =============== */
 @import url("https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap");
@@ -29,19 +31,14 @@ html {
 }
 
 #hamburger {
-  border: 2px solid whitesmoke;
-  background-color: whitesmoke;
+  border: 2px solid #f5f5f5;
+  background-color: #f5f5f5;
   margin: auto;
 }
 
-/* #collapse {
-  height: 0;
-  display: none;
-} */
-
 .home-header {
   font-size: 40pt;
-  color: #e9e9e9;
+  color: #f5f5f5;
   font-family: "Oleo Script", cursive;
 }
 
@@ -61,17 +58,16 @@ html {
   margin: 25px auto 125px 0;
   font-style: italic;
   font-size: 16pt;
-  color: whitesmoke;
+  color: #f5f5f5;
 }
 
 .home-nav-dropdown {
-  color: #e9e9e9;
+  color: #f5f5f5;
   background-color: #efb1f2;
   border-radius: 15px;
   margin: 5px;
   padding-left: 5px;
   padding-right: 5px;
-  /* display: none; */
 }
 
 /* =============== SiteNavBar Component =============== */
@@ -83,7 +79,7 @@ html {
 }
 
 .site-nav-link {
-  color: #e9e9e9;
+  color: #f5f5f5;
   font-family: "Oswald", sans-serif;
   font-size: 14pt;
 }
@@ -112,24 +108,16 @@ html {
 }
 
 .player-cards {
-  /* box-shadow: 10px 10px 5px lightblue; */
-  box-shadow: 0 0 20px 0 #e9e9e9, 0 0 20px 0 #e9e9e9;
+  box-shadow: 0 0 20px 0 #f5f5f5, 0 0 20px 0 #f5f5f5;
   border-radius: 25px;
-  /* background-color: #efb1f2; */
   background: transparent;
-  /* height: 400px;
-  width: 200px; */
   margin: auto 5rem 5rem 5rem;
 }
 
 .bio-player-name {
   font-size: 30pt;
   font-family: "Boogaloo", cursive;
-  /* border: 2px solid white; */
-  /* background-color: #efb1f2;
-  border-radius: 15px;
-  opacity: 0.65; */
-  color: #e9e9e9;
+  color: #f5f5f5;
   width: 300px;
   margin: auto auto 0.75rem auto;
 }
@@ -148,19 +136,14 @@ html {
   margin-top: 15px;
   height: 250px;
   width: 250px;
-  /* box-shadow: 10px 10px 5px lightblue; */
   box-shadow: 0 0 20px 0 #4cdbf6, 0 0 20px 0 #4cdbf6;
   border-radius: 20%;
-  /* border: 2px solid #4cdbf6; */
 }
 
 .bio-info {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  /* background-color: #efb1f2;
-  border-radius: 15px;
-  opacity: 0.85; */
   color: #f5f5f5;
   width: 250px;
 }
@@ -175,23 +158,12 @@ html {
   padding: 0;
   color: #efb1f2;
   font-family: "Oswald", sans-serif;
-  /* line-height: 1.25; */
-
-  /* color: #858585; */
-  /* color: #4cdbf6; */
-  /* display: flex;
-  flex-direction: row;
-  justify-content: center; */
-  /* margin-left: 60px; */
-  /* border: 2px solid white; */
-  /* background-color: #efb1f2; */
 }
 
 .player-info {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* font-family: 'Oswald', sans-serif; */
 }
 
 .bio-list-detail {
@@ -204,9 +176,6 @@ html {
 .player-card-body {
   justify-content: center;
   margin: auto;
-  /* border-left: 5px solid white;
-  border-bottom: 5px solid white;
-  border-style: outset; */
 }
 
 /* =============== PastRecipients Component =============== */
@@ -235,17 +204,9 @@ html {
 }
 
 .flag-winner-card {
-  /* box-shadow: 10px 10px 5px lightblue; */
-  /* box-shadow: 0 0 25px 0 #e9e9e9, 0 0 25px 0 #e9e9e9; */
-  /* box-shadow:  6px 6px #e9e9e9; */
   box-shadow: 0 1px 1px #c4c4c4, 0 2px 2px #c4c4c4, 0 4px 4px #c4c4c4,
     0 8px 8px #c4c4c4, 0 10px 10px #c4c4c4;
-
-  /* border-radius: 30px; */
   background-color: #e7e7e7d0;
-  /* background: transparent; */
-  /* height: 400px;
-    width: 200px; */
   margin: auto 5rem 5rem 5rem;
 }
 
@@ -273,19 +234,9 @@ html {
 }
 
 .boot-winner-card {
-  /* box-shadow: 10px 10px 5px lightblue; */
-  /* box-shadow: 0 0 20px 0 #e9e9e9, 0 0 20px 0 #e9e9e9; */
-  /* border-radius: 35px; */
-  /* background-color: #efb1f2; */
-  /* background: transparent; */
-  /* height: 400px;
-    width: 200px; */
   margin: auto 5rem 5rem 5rem;
-
   box-shadow: 0 1px 1px #c4c4c4, 0 2px 2px #c4c4c4, 0 4px 4px #c4c4c4,
     0 8px 8px #c4c4c4, 0 10px 10px #c4c4c4;
-
-  /* border-radius: 30px; */
   background-color: #e7e7e7d0;
 }
 
@@ -297,7 +248,7 @@ html {
 
 .pre-boot {
   margin-top: 2.5rem;
-  color: whitesmoke;
+  color: #f5f5f5;
 }
 
 .boot-winner-title {
@@ -322,39 +273,15 @@ html {
   grid-template-rows: repeat(3, 1fr);
   grid-column-gap: 35px;
   grid-row-gap: 35px;
-  /* grid-column-gap: 40px;
-  grid-row-gap: 40px; */
   width: 700px;
   height: 200px;
-  /* width: 1500px;
-  height: 200px; */
-  /* margin-top: 75px;
-  margin-left: 75px; */
-  /* margin: 75px auto 175px auto; */
 }
 
 .our-predictions {
-  /* box-shadow: 10px 10px 5px lightblue; */
-  /* box-shadow: 0 0 20px 0 #e9e9e9, 0 0 20px 0 #e9e9e9; */
   border-radius: 35px;
-  /* background-color: #efb1f2; */
   background-color: #4cdbf6;
-  /* height: 400px;
-      width: 200px; */
-  /* margin: auto 5rem 5rem 5rem; */
   box-shadow: 0 1px 1px #c4c4c4, 0 2px 2px #c4c4c4, 0 4px 4px #c4c4c4,
     0 8px 8px #c4c4c4, 0 10px 10px #c4c4c4;
-
-  /* border-radius: 30px; */
-  /* background-color: #e7e7e7d0; */
-}
-
-li.prediction-odd.list-group-item {
-  /* background-color: #dfdfdf; */
-}
-
-li.prediction-even.list-group-item {
-  /* background-color: #b3b3b3; */
 }
 
 #prediction-name {
@@ -380,8 +307,7 @@ li.prediction-even.list-group-item {
 }
 
 .our-predictions p {
-  color: whitesmoke;
-  /* background-color: pink; */
+  color: #f5f5f5;
 }
 
 #exampleSelect {
@@ -393,9 +319,6 @@ li.prediction-even.list-group-item {
 }
 
 .public-predictions {
-  /* position: relative;
-  top: 15rem; */
-  /* margin-bottom: 200px; */
   margin: 200px auto 200px auto;
   color: #f5f5f5;
   width: 1000px;
@@ -404,7 +327,6 @@ li.prediction-even.list-group-item {
   opacity: 0.95;
   background-blend-mode: lighten;
   border-radius: 10px;
-  /* justify-content: center; */
 }
 
 .public-predictions h3 {
@@ -417,7 +339,6 @@ li.prediction-even.list-group-item {
 
 .table-headers {
   text-align: center;
-  /* justify-items: center; */
   color: #000000;
 }
 
@@ -442,73 +363,7 @@ li.prediction-even.list-group-item {
 }
 
 .prediction-nav p {
-  color: whitesmoke;
-}
-
-/* =============== Prediction Components =============== */
-.CreatePrediction {
-  background-color: #2c3e50;
-  min-height: 100vh;
-  color: white;
-}
-
-.ShowPredictionDetails {
-  background-color: #2c3e50;
-  min-height: 100vh;
-  color: white;
-}
-
-.UpdatePrediction {
-  background-color: #2c3e50;
-  min-height: 100vh;
-  color: white;
-}
-
-.ShowPredictionList {
-  background-color: #2c3e50;
-  height: 100%;
-  width: 100%;
-  min-height: 100vh;
-  min-width: 100px;
-  color: white;
-}
-
-/* BookList Styles */
-.list {
-  display: grid;
-  margin: 20px 0 50px 0;
-  grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: 1fr;
-  grid-gap: 2em;
-}
-
-.card-container {
-  width: 250px;
-  border: 1px solid rgba(0, 0, 0.125);
-  margin: 0 auto;
-  border-radius: 5px;
-  overflow: hidden;
-}
-
-.desc {
-  height: 130px;
-  padding: 10px;
-}
-
-.desc h2 {
-  font-size: 1em;
-  font-weight: 400;
-}
-
-.desc h3,
-p {
-  font-weight: 300;
-}
-
-.desc h3 {
-  color: #6c757d;
-  font-size: 1em;
-  padding: 10px 0 10px 0;
+  color: #f5f5f5;
 }
 
 /* =============== History Component =============== */
@@ -561,7 +416,7 @@ p {
   margin: 75px auto 200px auto;
   height: 210rem;
   width: 75rem;
-  color: whitesmoke;
+  color: #f5f5f5;
 }
 
 .rules-header {
@@ -578,15 +433,12 @@ p {
   display: flex;
   justify-content: flex-start;
   margin-left: 5rem;
-  /* margin-left: 8rem; */
-  /* font-family: 'Oswald', sans-serif; */
 }
 
 .rules-list {
   text-align: left;
   display: flex;
   flex-direction: column;
-  /* margin-left: 10rem; */
   margin: auto;
   width: 650px;
   font-size: 12pt;
@@ -600,30 +452,15 @@ p {
 
 /* =============== Graph Component =============== */
 
-/* .barchart {
-  background-color: yellow;
-  color: black;
-  height: 425px;
-  width: 425px;
-} */
-
-.graph-svg {
-  background-color: red;
-  color: black;
-}
-
 #prediction-chart {
-  background-color: white;
+  background-color: #f5f5f5;
   background: transparent;
   border-radius: 15px;
-  /* font-size: 12pt; */
-  color: black;
+  color: #000000;
   height: fit-content;
   width: 700px;
   border: 5px solid #c4c4c4;
   margin-top: 45px;
-
-  /* margin: auto auto auto 500px; */
 }
 
 svg {
